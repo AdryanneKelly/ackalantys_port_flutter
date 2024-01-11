@@ -53,6 +53,10 @@ class MenuWidget extends StatelessWidget implements PreferredSizeWidget {
           onPressed: () => onMenuClick(4),
           child: Text('Contact', style: theme.textTheme.labelLarge),
         ),
+        TextButton(
+          onPressed: () => onMenuClick(4),
+          child: Text('Contact', style: theme.textTheme.labelLarge),
+        ),
         SizedBox(
           width: size.width * 0.01,
         ),
