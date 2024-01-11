@@ -1,12 +1,10 @@
-import 'package:ackalantys/app/controller/theme_controller.dart';
 import 'package:ackalantys/app/pages/widgets/about_widget.dart';
 import 'package:ackalantys/app/pages/widgets/contact_widget.dart';
 import 'package:ackalantys/app/pages/widgets/footer_widget.dart';
 import 'package:ackalantys/app/pages/widgets/home_widget.dart';
 import 'package:ackalantys/app/pages/widgets/projects_widget.dart';
-import 'package:ackalantys/app/shared/themes/color_extension.dart';
+import 'package:ackalantys/app/shared/widgets/menu_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -16,79 +14,65 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final scrollController = ScrollController();
+  final homeKey = GlobalKey();
+  final aboutKey = GlobalKey();
+  final projectsKey = GlobalKey();
+  final contactKey = GlobalKey();
+
+  @override
+  void dispose() {
+    scrollController.dispose();
+    super.dispose();
+  }
+
+  void _onMenuClick(int value) {
+    final RenderBox renderBox;
+    switch (value) {
+      case 1:
+        renderBox = homeKey.currentContext!.findRenderObject() as RenderBox;
+        break;
+      case 2:
+        renderBox = aboutKey.currentContext!.findRenderObject() as RenderBox;
+        break;
+      case 3:
+        renderBox = projectsKey.currentContext!.findRenderObject() as RenderBox;
+        break;
+      case 4:
+        renderBox = contactKey.currentContext!.findRenderObject() as RenderBox;
+        break;
+      default:
+        throw Exception('Invalid menu value');
+    }
+
+    final offset = renderBox.localToGlobal(Offset.zero);
+    scrollController.animateTo(
+      offset.dy,
+      duration: const Duration(milliseconds: 500),
+      curve: Curves.easeInOut,
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
-    final theme = Theme.of(context);
-    final colors = theme.extension<ColorExtension>()!;
-    final themeController = Provider.of<ThemeController>(context);
     return Scaffold(
-      appBar: AppBar(
-        titleSpacing: size.width * 0.02,
-        title: RichText(
-          text: TextSpan(
-            text: 'Adryanne',
-            style: theme.textTheme.titleLarge!
-                .copyWith(fontWeight: FontWeight.w900),
-            children: <TextSpan>[
-              TextSpan(text: 'Kelly', style: theme.textTheme.titleLarge),
-            ],
-          ),
-        ),
-        actions: [
-          TextButton(
-              onPressed: () {},
-              child: Text('Home', style: theme.textTheme.labelLarge)),
-          SizedBox(
-            width: size.width * 0.01,
-          ),
-          TextButton(
-            onPressed: () {},
-            child: Text('About', style: theme.textTheme.labelLarge),
-          ),
-          SizedBox(
-            width: size.width * 0.01,
-          ),
-          TextButton(
-            onPressed: () {},
-            child: Text('Projects', style: theme.textTheme.labelLarge),
-          ),
-          SizedBox(
-            width: size.width * 0.01,
-          ),
-          TextButton(
-            onPressed: () {},
-            child: Text('Contact', style: theme.textTheme.labelLarge),
-          ),
-          SizedBox(
-            width: size.width * 0.01,
-          ),
-          IconButton(
-            onPressed: () {
-              themeController.toggleTheme();
-            },
-            icon: Icon(
-              themeController.isLight ? Icons.brightness_2 : Icons.brightness_7,
-              color: colors.toggleThemeIconColor,
-            ),
-          ),
-          SizedBox(
-            width: size.width * 0.01,
-          ),
-        ],
+      appBar: MenuWidget(
+        onMenuClick: _onMenuClick,
       ),
       body: SizedBox(
         width: size.width,
         height: size.height,
         child: RawScrollbar(
           child: SingleChildScrollView(
+            controller: scrollController,
             child: Column(
               children: [
-                const HomeWidget(),
-                const AboutWidget(),
+                HomeWidget(key: homeKey),
+                AboutWidget(key: aboutKey),
                 SizedBox(height: size.height * 0.05),
-                const ProjectsWidget(),
-                const ContactWidget(),
+                ProjectsWidget(key: projectsKey),
+                ContactWidget(key: contactKey),
                 const FooterWidget()
               ],
             ),

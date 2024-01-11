@@ -13,6 +13,7 @@ class ColorExtension extends ThemeExtension<ColorExtension> {
     required this.primaryGradientTitleColor,
     required this.secondaryGradientTitleColor,
     required this.toggleThemeIconColor,
+    required this.menuBackgroundColor,
   });
   final Color stackIconsColor;
   final Color startIconButttonColor;
@@ -24,6 +25,7 @@ class ColorExtension extends ThemeExtension<ColorExtension> {
   final Color primaryGradientTitleColor;
   final Color secondaryGradientTitleColor;
   final Color toggleThemeIconColor;
+  final Color menuBackgroundColor;
 
   @override
   ThemeExtension<ColorExtension> lerp(
@@ -44,6 +46,8 @@ class ColorExtension extends ThemeExtension<ColorExtension> {
     Color? primaryGradientTitleColor;
     Color? secondaryGradientTitleColor;
     Color? toggleThemeIconColor;
+    Color? menuBackgroundColor;
+
     return ColorExtension(
       stackIconsColor: stackIconsColor ?? this.stackIconsColor,
       startIconButttonColor:
@@ -61,6 +65,7 @@ class ColorExtension extends ThemeExtension<ColorExtension> {
       secondaryGradientTitleColor:
           secondaryGradientTitleColor ?? this.secondaryGradientTitleColor,
       toggleThemeIconColor: toggleThemeIconColor ?? this.toggleThemeIconColor,
+      menuBackgroundColor: menuBackgroundColor ?? this.menuBackgroundColor,
     );
   }
 }

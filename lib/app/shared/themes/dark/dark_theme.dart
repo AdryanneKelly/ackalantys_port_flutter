@@ -72,17 +72,17 @@ class DarkTheme {
     ),
     extensions: [
       ColorExtension(
-        stackIconsColor: DarkColors.primaryColor,
-        startIconButttonColor: DarkColors.surfaceSecondary,
-        secondaryStartIconButtonColor: DarkColors.primaryColor,
-        endIconButtonColor: DarkColors.primaryColor,
-        secondaryEndIconButtonColor: DarkColors.surfaceSecondary,
-        titleSessionColor: DarkColors.secondaryColor,
-        contactSocialCardColor: DarkColors.surfaceTertiary,
-        primaryGradientTitleColor: DarkColors.primaryColor,
-        secondaryGradientTitleColor: DarkColors.secondaryColor,
-        toggleThemeIconColor: DarkColors.secondaryColor,
-      ),
+          stackIconsColor: DarkColors.primaryColor,
+          startIconButttonColor: DarkColors.surfaceSecondary,
+          secondaryStartIconButtonColor: DarkColors.primaryColor,
+          endIconButtonColor: DarkColors.primaryColor,
+          secondaryEndIconButtonColor: DarkColors.surfaceSecondary,
+          titleSessionColor: DarkColors.secondaryColor,
+          contactSocialCardColor: DarkColors.surfaceTertiary,
+          primaryGradientTitleColor: DarkColors.primaryColor,
+          secondaryGradientTitleColor: DarkColors.secondaryColor,
+          toggleThemeIconColor: DarkColors.secondaryColor,
+          menuBackgroundColor: DarkColors.surfaceBackground),
     ],
   );
 }

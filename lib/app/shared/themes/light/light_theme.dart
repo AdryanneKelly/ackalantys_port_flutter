@@ -83,6 +83,7 @@ class LightTheme {
         primaryGradientTitleColor: LightColors.primaryColor,
         secondaryGradientTitleColor: LightColors.secondaryColor,
         toggleThemeIconColor: LightColors.secondaryColor,
+        menuBackgroundColor: LightColors.primaryColor
       ),
     ],
   );
