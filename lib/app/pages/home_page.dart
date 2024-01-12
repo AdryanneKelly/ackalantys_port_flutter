@@ -14,43 +14,51 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final scrollController = ScrollController();
+  final ScrollController _scrollController = ScrollController();
   final homeKey = GlobalKey();
   final aboutKey = GlobalKey();
   final projectsKey = GlobalKey();
   final contactKey = GlobalKey();
 
-  @override
-  void dispose() {
-    scrollController.dispose();
-    super.dispose();
-  }
-
   void _onMenuClick(int value) {
-    final RenderBox renderBox;
     switch (value) {
       case 1:
-        renderBox = homeKey.currentContext!.findRenderObject() as RenderBox;
+        Scrollable.ensureVisible(
+          homeKey.currentContext!,
+          duration: const Duration(milliseconds: 500),
+          curve: Curves.easeInOut,
+        );
         break;
       case 2:
-        renderBox = aboutKey.currentContext!.findRenderObject() as RenderBox;
+        Scrollable.ensureVisible(
+          aboutKey.currentContext!,
+          duration: const Duration(milliseconds: 500),
+          curve: Curves.easeInOut,
+        );
         break;
       case 3:
-        renderBox = projectsKey.currentContext!.findRenderObject() as RenderBox;
+        Scrollable.ensureVisible(
+          projectsKey.currentContext!,
+          duration: const Duration(milliseconds: 500),
+          curve: Curves.easeInOut,
+        );
         break;
       case 4:
-        renderBox = contactKey.currentContext!.findRenderObject() as RenderBox;
+        Scrollable.ensureVisible(
+          contactKey.currentContext!,
+          duration: const Duration(milliseconds: 500),
+          curve: Curves.easeInOut,
+        );
         break;
       default:
         throw Exception('Invalid menu value');
     }
+  }
 
-    final offset = renderBox.localToGlobal(Offset.zero);
-    scrollController.animateTo(
-      offset.dy,
-      duration: const Duration(milliseconds: 500),
-      curve: Curves.easeInOut,
-    );
+  @override
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
   }
 
   @override
@@ -63,19 +71,17 @@ class _HomePageState extends State<HomePage> {
       body: SizedBox(
         width: size.width,
         height: size.height,
-        child: RawScrollbar(
-          child: SingleChildScrollView(
-            controller: scrollController,
-            child: Column(
-              children: [
-                HomeWidget(key: homeKey),
-                AboutWidget(key: aboutKey),
-                SizedBox(height: size.height * 0.05),
-                ProjectsWidget(key: projectsKey),
-                ContactWidget(key: contactKey),
-                const FooterWidget()
-              ],
-            ),
+        child: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
+          controller: _scrollController,
+          child: Column(
+            children: [
+              HomeWidget(key: homeKey),
+              AboutWidget(key: aboutKey),
+              ProjectsWidget(key: projectsKey),
+              ContactWidget(key: contactKey),
+              const FooterWidget()
+            ],
           ),
         ),
       ),
