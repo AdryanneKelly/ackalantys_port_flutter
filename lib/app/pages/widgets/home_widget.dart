@@ -66,9 +66,9 @@ class HomeWidget extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: size.width * 0.3,
+            width: size.width * 0.38,
             child: Image.asset(
-              'assets/images/code.png',
+              'assets/images/code-3.png',
               fit: BoxFit.cover,
             ),
           ),

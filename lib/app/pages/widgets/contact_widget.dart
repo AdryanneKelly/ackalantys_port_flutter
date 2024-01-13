@@ -22,7 +22,10 @@ class ContactWidget extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Image.asset('assets/images/profile.png'),
+                  Image.asset(
+                    'assets/images/contact-me.png',
+                    height: size.height * 0.2,
+                  ),
                   SizedBox(
                     height: size.height * 0.02,
                   ),

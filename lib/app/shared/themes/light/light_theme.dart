@@ -15,6 +15,7 @@ class LightTheme {
       titleLarge: GoogleFonts.kalam(color: LightColors.textTertiary),
       bodyMedium: GoogleFonts.heebo(
         color: LightColors.textSecondary,
+        fontSize: 18,
       ),
       bodyLarge: GoogleFonts.heebo(
         color: LightColors.textPrimary,
@@ -73,18 +74,17 @@ class LightTheme {
     ),
     extensions: [
       ColorExtension(
-        stackIconsColor: LightColors.primaryColor,
-        startIconButttonColor: LightColors.surfaceSecondary,
-        secondaryStartIconButtonColor: LightColors.primaryColor,
-        endIconButtonColor: LightColors.primaryColor,
-        secondaryEndIconButtonColor: LightColors.surfaceSecondary,
-        titleSessionColor: LightColors.secondaryColor,
-        contactSocialCardColor: LightColors.surfaceTertiary,
-        primaryGradientTitleColor: LightColors.primaryColor,
-        secondaryGradientTitleColor: LightColors.secondaryColor,
-        toggleThemeIconColor: LightColors.secondaryColor,
-        menuBackgroundColor: LightColors.primaryColor
-      ),
+          stackIconsColor: LightColors.primaryColor,
+          startIconButttonColor: LightColors.surfaceSecondary,
+          secondaryStartIconButtonColor: LightColors.primaryColor,
+          endIconButtonColor: LightColors.primaryColor,
+          secondaryEndIconButtonColor: LightColors.surfaceSecondary,
+          titleSessionColor: LightColors.secondaryColor,
+          contactSocialCardColor: LightColors.surfaceTertiary,
+          primaryGradientTitleColor: LightColors.primaryColor,
+          secondaryGradientTitleColor: LightColors.secondaryColor,
+          toggleThemeIconColor: LightColors.secondaryColor,
+          menuBackgroundColor: LightColors.primaryColor),
     ],
   );
 }

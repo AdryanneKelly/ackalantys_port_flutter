@@ -19,9 +19,9 @@ class AboutWidget extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               SizedBox(
-                width: size.width * 0.3,
+                width: size.width * 0.4,
                 child: Image.asset(
-                  'assets/images/cat_code.png',
+                  'assets/images/cat-code.png',
                   fit: BoxFit.cover,
                 ),
               ),

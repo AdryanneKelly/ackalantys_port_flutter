@@ -15,6 +15,7 @@ class DarkTheme {
       titleLarge: GoogleFonts.kalam(color: DarkColors.textPrimary),
       bodyMedium: GoogleFonts.heebo(
         color: DarkColors.textSecondary,
+        fontSize: 18,
       ),
       bodyLarge: GoogleFonts.heebo(
         color: DarkColors.textPrimary,
