@@ -1,11 +1,7 @@
 import 'package:flutter/material.dart';
 
 class StartIconButtonWidget extends StatelessWidget {
-  const StartIconButtonWidget(
-      {super.key,
-      required this.imageIcon,
-      required this.label,
-      required this.color});
+  const StartIconButtonWidget({super.key, required this.imageIcon, required this.label, required this.color});
 
   final String imageIcon;
   final String label;
@@ -17,7 +13,7 @@ class StartIconButtonWidget extends StatelessWidget {
     final theme = Theme.of(context);
     return Container(
       height: size.height * 0.05,
-      width: size.width * 0.08,
+      width: 140,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10),
         color: color,

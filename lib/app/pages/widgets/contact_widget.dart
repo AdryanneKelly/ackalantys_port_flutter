@@ -38,8 +38,10 @@ class ContactWidget extends StatelessWidget {
                   SizedBox(
                     height: size.height * 0.02,
                   ),
-                  Text('Enjoyed my work? Let’s work together',
-                      style: theme.textTheme.headlineLarge),
+                  SizedBox(
+                    width: size.width * 0.3,
+                    child: Text('Enjoyed my work? Let’s work together', style: theme.textTheme.headlineLarge),
+                  ),
                   SizedBox(
                     height: size.height * 0.02,
                   ),

@@ -12,7 +12,7 @@ class ProjectsWidget extends StatelessWidget {
     final theme = Theme.of(context);
     final colors = theme.extension<ColorExtension>()!;
     return SizedBox(
-      height: size.height * 0.8,
+      height: size.height,
       child: Padding(
         padding: const EdgeInsets.only(top: 80.0),
         child: Column(

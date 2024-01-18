@@ -25,14 +25,14 @@ class CardProjectWidget extends StatelessWidget {
       child: Column(
         children: [
           SizedBox(
-            height: size.height * 0.2,
-            width: size.width * 0.2,
-            child: Image.asset(imageProject),
+            height: size.height * 0.25,
+            width: size.width * 0.25,
+            child: Image.asset(imageProject, fit: BoxFit.cover),
           ),
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: SizedBox(
-              width: size.width * 0.18,
+              width: size.width * 0.22,
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -50,7 +50,7 @@ class CardProjectWidget extends StatelessWidget {
             ),
           ),
           SizedBox(
-            width: size.width * 0.18,
+            width: size.width * 0.22,
             child: Padding(
               padding: const EdgeInsets.only(bottom: 16.0),
               child: Column(
