@@ -1,5 +1,7 @@
+import 'package:ackalantys/app/controller/theme_controller.dart';
 import 'package:ackalantys/app/shared/themes/color_extension.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 class MenuMobileWidget extends StatelessWidget {
   final ValueChanged<int> onMenuClick;
@@ -9,12 +11,30 @@ class MenuMobileWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final colors = theme.extension<ColorExtension>()!;
+    final themeController = Provider.of<ThemeController>(context);
     return Drawer(
       backgroundColor: colors.menuBackgroundColor,
       child: Padding(
         padding: const EdgeInsets.only(top: 20.0),
         child: ListView(
           children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                IconButton(
+                  onPressed: () {
+                    Navigator.pop(context);
+                  },
+                  icon: Icon(
+                    Icons.close,
+                    color: colors.drawerMenuIconColor,
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(
+              height: 20,
+            ),
             SizedBox(
               height: 100,
               child: Image.asset('assets/images/contact-me.png'),
@@ -29,6 +49,15 @@ class MenuMobileWidget extends StatelessWidget {
                     TextSpan(text: 'Kelly', style: theme.textTheme.titleLarge),
                   ],
                 ),
+              ),
+            ),
+            IconButton(
+              onPressed: () {
+                themeController.toggleTheme();
+              },
+              icon: Icon(
+                themeController.isLight ? Icons.brightness_2 : Icons.brightness_7,
+                color: colors.toggleThemeIconColor,
               ),
             ),
             Padding(
@@ -67,11 +96,12 @@ class MenuMobileWidget extends StatelessWidget {
                 Navigator.pop(context);
               },
             ),
+            const SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.only(left: 20.0, top: 30),
               child: Text(
                 '© 2024 Adryanne Kelly',
-                style: theme.textTheme.bodySmall,
+                style: theme.textTheme.bodySmall!.copyWith(color: Colors.white.withOpacity(0.5)),
               ),
             )
           ],
