@@ -11,7 +11,7 @@ class AboutMobileWidget extends StatelessWidget {
     final theme = Theme.of(context);
     final colors = theme.extension<ColorExtension>()!;
     return SizedBox(
-      height: size.height,
+      // height: size.height,
       child: Card(
         margin: const EdgeInsets.all(30),
         child: Padding(
