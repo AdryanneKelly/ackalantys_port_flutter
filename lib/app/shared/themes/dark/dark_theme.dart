@@ -34,6 +34,8 @@ class DarkTheme {
       ),
       labelLarge: GoogleFonts.heebo(
         color: DarkColors.textPrimary,
+        fontWeight: FontWeight.w500,
+        fontSize: 15,
       ),
     ),
     primaryTextTheme: GoogleFonts.heeboTextTheme(),

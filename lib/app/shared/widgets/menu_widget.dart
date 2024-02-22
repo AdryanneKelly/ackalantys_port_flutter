@@ -21,8 +21,7 @@ class MenuWidget extends StatelessWidget implements PreferredSizeWidget {
       title: RichText(
         text: TextSpan(
           text: 'Adryanne',
-          style:
-              theme.textTheme.titleLarge!.copyWith(fontWeight: FontWeight.w900),
+          style: theme.textTheme.titleLarge!.copyWith(fontWeight: FontWeight.w900),
           children: <TextSpan>[
             TextSpan(text: 'Kelly', style: theme.textTheme.titleLarge),
           ],
@@ -30,8 +29,9 @@ class MenuWidget extends StatelessWidget implements PreferredSizeWidget {
       ),
       actions: [
         TextButton(
-            onPressed: () => onMenuClick(1),
-            child: Text('Home', style: theme.textTheme.labelLarge)),
+          onPressed: () => onMenuClick(1),
+          child: Text('Home', style: theme.textTheme.labelLarge),
+        ),
         SizedBox(
           width: size.width * 0.01,
         ),

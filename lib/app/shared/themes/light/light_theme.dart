@@ -10,7 +10,7 @@ class LightTheme {
       backgroundColor: LightColors.primaryColor,
       elevation: 12,
     ),
-    scaffoldBackgroundColor: LightColors.surfaceBackground,
+    scaffoldBackgroundColor: LightColors.surfaceBackground.withOpacity(0.6),
     textTheme: TextTheme(
       titleLarge: GoogleFonts.kalam(color: LightColors.textTertiary),
       bodyMedium: GoogleFonts.heebo(
@@ -34,6 +34,8 @@ class LightTheme {
       ),
       labelLarge: GoogleFonts.heebo(
         color: LightColors.textTertiary,
+        fontWeight: FontWeight.w500,
+        fontSize: 15,
       ),
     ),
     primaryTextTheme: GoogleFonts.heeboTextTheme(),
