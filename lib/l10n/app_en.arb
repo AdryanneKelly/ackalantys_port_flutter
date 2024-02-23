@@ -1,0 +1,10 @@
+{
+    "hello": "Hi, I'm Adryanne Kelly",
+    "@hello": {
+        "description": "Hi, I'm Adryanne Kelly"
+    },
+    "occupation": "Software Developer",
+        "@occupation": {
+            "description": "Software Developer"
+        }
+}

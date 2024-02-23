@@ -1,3 +1,4 @@
+import 'package:ackalantys/app/controller/language_controller.dart';
 import 'package:ackalantys/app/controller/theme_controller.dart';
 import 'package:ackalantys/app/shared/themes/color_extension.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +17,7 @@ class MenuWidget extends StatelessWidget implements PreferredSizeWidget {
     final theme = Theme.of(context);
     final colors = theme.extension<ColorExtension>()!;
     final themeController = Provider.of<ThemeController>(context);
+    final languageController = Provider.of<LanguageController>(context);
     return AppBar(
       titleSpacing: size.width * 0.02,
       title: RichText(
@@ -58,11 +60,23 @@ class MenuWidget extends StatelessWidget implements PreferredSizeWidget {
         ),
         IconButton(
           onPressed: () {
+            languageController.toggleLanguage();
+          },
+          icon: Image.asset(
+            languageController.isPortuguese ? 'assets/icons/pt_lula.png' : 'assets/icons/en.png',
+            height: size.height * 0.012,
+          ),
+        ),
+        SizedBox(
+          width: size.width * 0.01,
+        ),
+        IconButton(
+          onPressed: () {
             themeController.toggleTheme();
           },
-          icon: Icon(
-            themeController.isLight ? Icons.brightness_2 : Icons.brightness_7,
-            color: colors.toggleThemeIconColor,
+          icon: Image.asset(
+            themeController.isLight ? 'assets/icons/sun.png' : 'assets/icons/moon.png',
+            height: size.height * 0.025,
           ),
         ),
         SizedBox(
