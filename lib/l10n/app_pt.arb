@@ -1,4 +1,7 @@
 {
     "hello": "Oi, eu sou Adryanne Kelly",
-    "occupation": "Desenvolvedora de Software"
+    "occupation": "Desenvolvedora de Software",
+    "menuAbout": "Sobre",
+    "menuProject": "Projetos",
+    "menuContact": "Contato"
 }

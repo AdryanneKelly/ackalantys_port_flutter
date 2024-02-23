@@ -9,4 +9,13 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get occupation => 'Software Developer';
+
+  @override
+  String get menuAbout => 'About';
+
+  @override
+  String get menuProject => 'Projects';
+
+  @override
+  String get menuContact => 'Contact';
 }

@@ -104,6 +104,24 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Software Developer'**
   String get occupation;
+
+  /// About
+  ///
+  /// In en, this message translates to:
+  /// **'About'**
+  String get menuAbout;
+
+  /// Projects
+  ///
+  /// In en, this message translates to:
+  /// **'Projects'**
+  String get menuProject;
+
+  /// Contact
+  ///
+  /// In en, this message translates to:
+  /// **'Contact'**
+  String get menuContact;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

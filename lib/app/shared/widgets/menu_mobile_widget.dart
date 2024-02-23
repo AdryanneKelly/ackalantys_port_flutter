@@ -2,6 +2,7 @@ import 'package:ackalantys/app/controller/language_controller.dart';
 import 'package:ackalantys/app/controller/theme_controller.dart';
 import 'package:ackalantys/app/shared/themes/color_extension.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 
 class MenuMobileWidget extends StatelessWidget {
@@ -14,6 +15,7 @@ class MenuMobileWidget extends StatelessWidget {
     final colors = theme.extension<ColorExtension>()!;
     final themeController = Provider.of<ThemeController>(context);
     final languageController = Provider.of<LanguageController>(context);
+    final localization = AppLocalizations.of(context)!;
     return Drawer(
       backgroundColor: colors.menuBackgroundColor,
       child: Padding(
@@ -60,15 +62,14 @@ class MenuMobileWidget extends StatelessWidget {
                   onPressed: () {
                     themeController.toggleTheme();
                   },
-                  icon: Icon(
-                    themeController.isLight ? Icons.brightness_2 : Icons.brightness_7,
-                    color: colors.toggleThemeIconColor,
+                  icon: Image.asset(
+                    themeController.isLight ? 'assets/icons/sun.png' : 'assets/icons/moon.png',
+                    height: 32,
                   ),
                 ),
                 IconButton(
                   onPressed: () {
                     languageController.toggleLanguage();
-                    print(languageController.isPortuguese);
                   },
                   icon: Image.asset(
                     languageController.isPortuguese ? 'assets/icons/pt_lula.png' : 'assets/icons/en.png',
@@ -91,7 +92,7 @@ class MenuMobileWidget extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(Icons.person, color: colors.drawerMenuIconColor),
-              title: Text('About', style: theme.textTheme.labelLarge),
+              title: Text(localization.menuAbout, style: theme.textTheme.labelLarge),
               onTap: () {
                 onMenuClick(2);
                 Navigator.pop(context);
@@ -99,7 +100,7 @@ class MenuMobileWidget extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(Icons.work, color: colors.drawerMenuIconColor),
-              title: Text('Projects', style: theme.textTheme.labelLarge),
+              title: Text(localization.menuProject, style: theme.textTheme.labelLarge),
               onTap: () {
                 onMenuClick(3);
                 Navigator.pop(context);
@@ -107,7 +108,7 @@ class MenuMobileWidget extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(Icons.mail, color: colors.drawerMenuIconColor),
-              title: Text('Contact', style: theme.textTheme.labelLarge),
+              title: Text(localization.menuContact, style: theme.textTheme.labelLarge),
               onTap: () {
                 onMenuClick(4);
                 Navigator.pop(context);

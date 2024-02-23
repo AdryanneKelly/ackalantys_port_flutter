@@ -9,4 +9,13 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get occupation => 'Desenvolvedora de Software';
+
+  @override
+  String get menuAbout => 'Sobre';
+
+  @override
+  String get menuProject => 'Projetos';
+
+  @override
+  String get menuContact => 'Contato';
 }
