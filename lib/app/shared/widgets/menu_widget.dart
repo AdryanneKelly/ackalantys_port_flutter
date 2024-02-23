@@ -1,6 +1,5 @@
 import 'package:ackalantys/app/controller/language_controller.dart';
 import 'package:ackalantys/app/controller/theme_controller.dart';
-import 'package:ackalantys/app/shared/themes/color_extension.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -15,7 +14,6 @@ class MenuWidget extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     final theme = Theme.of(context);
-    final colors = theme.extension<ColorExtension>()!;
     final themeController = Provider.of<ThemeController>(context);
     final languageController = Provider.of<LanguageController>(context);
     return AppBar(
