@@ -2,6 +2,7 @@ import 'package:ackalantys/app/pages/widgets/end_icon_button_widget.dart';
 import 'package:ackalantys/app/pages/widgets/start_icon_button_widget.dart';
 import 'package:ackalantys/app/shared/themes/color_extension.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class HomeMobileWidget extends StatelessWidget {
   const HomeMobileWidget({super.key});
@@ -11,6 +12,7 @@ class HomeMobileWidget extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     final theme = Theme.of(context);
     final colors = theme.extension<ColorExtension>()!;
+    final localization = AppLocalizations.of(context)!;
     return SizedBox(
       height: size.height,
       child: Column(
@@ -36,12 +38,11 @@ class HomeMobileWidget extends StatelessWidget {
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                   ).createShader(bounds),
-                  child: Text('Hi, I\'m Adryanne Kelly',
-                      style: theme.textTheme.displayMedium!.copyWith(color: Colors.white)),
+                  child: Text(localization.hello, style: theme.textTheme.displayMedium!.copyWith(color: Colors.white)),
                 ),
                 SizedBox(height: size.height * 0.02),
                 Text(
-                  'Software Developer',
+                  localization.occupation,
                   style: theme.textTheme.headlineLarge,
                 ),
                 SizedBox(height: size.height * 0.02),
