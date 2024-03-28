@@ -66,7 +66,7 @@ class ProjectsMobileWidget extends StatelessWidget {
               child: EndIconButtonWidget(
                 color: colors.secondaryEndIconButtonColor,
                 imageIcon: 'assets/icons/arrow_right.png',
-                label: 'See all',
+                label: 'See all', onTap: () {  },
               ),
             )
           ],

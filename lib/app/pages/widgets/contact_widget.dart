@@ -10,6 +10,10 @@ class ContactWidget extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     final theme = Theme.of(context);
     final colors = theme.extension<ColorExtension>()!;
+    TextEditingController nameController = TextEditingController();
+    TextEditingController emailController = TextEditingController();
+    TextEditingController messageController = TextEditingController();
+    GlobalKey<FormState> formKey = GlobalKey<FormState>();
     return SizedBox(
       height: size.height * 0.8,
       child: Padding(
@@ -82,44 +86,50 @@ class ContactWidget extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
-                width: size.width * 0.3,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const TextField(
-                      decoration: InputDecoration(
-                        hintText: 'Name',
+              Form(
+                key: formKey,
+                child: SizedBox(
+                  width: size.width * 0.3,
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      TextFormField(
+                        controller: nameController,
+                        decoration: const InputDecoration(
+                          hintText: 'Name',
+                        ),
                       ),
-                    ),
-                    SizedBox(
-                      height: size.height * 0.02,
-                    ),
-                    const TextField(
-                      decoration: InputDecoration(
-                        hintText: 'Email',
+                      SizedBox(
+                        height: size.height * 0.02,
                       ),
-                    ),
-                    SizedBox(
-                      height: size.height * 0.02,
-                    ),
-                    const TextField(
-                      minLines: 6,
-                      maxLines: 20,
-                      decoration: InputDecoration(
-                        hintText: 'Your Message',
+                      TextFormField(
+                        controller: emailController,
+                        decoration: const InputDecoration(
+                          hintText: 'Email',
+                        ),
                       ),
-                    ),
-                    SizedBox(
-                      height: size.height * 0.02,
-                    ),
-                    EndIconButtonWidget(
-                      color: colors.endIconButtonColor,
-                      imageIcon: 'assets/icons/arrow_right.png',
-                      label: 'Send message',
-                    )
-                  ],
+                      SizedBox(
+                        height: size.height * 0.02,
+                      ),
+                      TextFormField(
+                        controller: messageController,
+                        minLines: 6,
+                        maxLines: 20,
+                        decoration: const InputDecoration(
+                          hintText: 'Your Message',
+                        ),
+                      ),
+                      SizedBox(
+                        height: size.height * 0.02,
+                      ),
+                      EndIconButtonWidget(
+                        color: colors.endIconButtonColor,
+                        imageIcon: 'assets/icons/arrow_right.png',
+                        label: 'Send message', onTap: () {  },
+                      )
+                    ],
+                  ),
                 ),
               ),
             ],

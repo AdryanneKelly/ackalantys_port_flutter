@@ -124,7 +124,7 @@ class ContactMobileWidget extends StatelessWidget {
                       EndIconButtonWidget(
                         color: colors.endIconButtonColor,
                         imageIcon: 'assets/icons/arrow_right.png',
-                        label: 'Send message',
+                        label: 'Send message', onTap: () {  },
                       )
                     ],
                   ),

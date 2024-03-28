@@ -63,7 +63,7 @@ class HomeMobileWidget extends StatelessWidget {
                     EndIconButtonWidget(
                       color: colors.endIconButtonColor,
                       imageIcon: 'assets/icons/arrow_right.png',
-                      label: 'Get in touch',
+                      label: 'Get in touch', onTap: () {  },
                     ),
                   ],
                 ),
