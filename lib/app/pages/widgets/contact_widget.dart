@@ -1,3 +1,4 @@
+import 'package:ackalantys/app/controller/message_controller.dart';
 import 'package:ackalantys/app/pages/widgets/end_icon_button_widget.dart';
 import 'package:ackalantys/app/shared/themes/color_extension.dart';
 import 'package:flutter/material.dart';
@@ -14,6 +15,7 @@ class ContactWidget extends StatelessWidget {
     TextEditingController emailController = TextEditingController();
     TextEditingController messageController = TextEditingController();
     GlobalKey<FormState> formKey = GlobalKey<FormState>();
+    final controller = MessageController();
     return SizedBox(
       height: size.height * 0.8,
       child: Padding(
@@ -99,6 +101,12 @@ class ContactWidget extends StatelessWidget {
                         decoration: const InputDecoration(
                           hintText: 'Name',
                         ),
+                        validator: (value) {
+                          if (value!.isEmpty) {
+                            return 'Please enter a name';
+                          }
+                          return null;
+                        },
                       ),
                       SizedBox(
                         height: size.height * 0.02,
@@ -108,6 +116,12 @@ class ContactWidget extends StatelessWidget {
                         decoration: const InputDecoration(
                           hintText: 'Email',
                         ),
+                        validator: (value) {
+                          if (value!.isEmpty || !value.contains('@')) {
+                            return 'Please enter an email';
+                          }
+                          return null;
+                        },
                       ),
                       SizedBox(
                         height: size.height * 0.02,
@@ -119,6 +133,12 @@ class ContactWidget extends StatelessWidget {
                         decoration: const InputDecoration(
                           hintText: 'Your Message',
                         ),
+                        validator: (value) {
+                          if (value!.isEmpty) {
+                            return 'Please enter a message';
+                          }
+                          return null;
+                        },
                       ),
                       SizedBox(
                         height: size.height * 0.02,
@@ -126,7 +146,20 @@ class ContactWidget extends StatelessWidget {
                       EndIconButtonWidget(
                         color: colors.endIconButtonColor,
                         imageIcon: 'assets/icons/arrow_right.png',
-                        label: 'Send message', onTap: () {  },
+                        label: 'Send message',
+                        onTap: () {
+                          if (formKey.currentState!.validate()) {
+                            controller.sendMessage(
+                              name: nameController.text,
+                              email: emailController.text,
+                              message: messageController.text,
+                            );
+
+                            nameController.clear();
+                            emailController.clear();
+                            messageController.clear();
+                          }
+                        },
                       )
                     ],
                   ),
