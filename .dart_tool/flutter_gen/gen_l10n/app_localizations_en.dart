@@ -11,6 +11,12 @@ class AppLocalizationsEn extends AppLocalizations {
   String get occupation => 'Software Developer';
 
   @override
+  String get introduction => 'Hey, guys! This is Adryanne Kelly, a full-stack software developer passionate about challenges and discovering new solutions';
+
+  @override
+  String get menuHome => 'Home';
+
+  @override
   String get menuAbout => 'About';
 
   @override

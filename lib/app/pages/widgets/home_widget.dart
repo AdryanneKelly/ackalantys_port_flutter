@@ -30,19 +30,19 @@ class HomeWidget extends StatelessWidget {
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                   ).createShader(bounds),
-                  child: Text(localization.hello, style: theme.textTheme.displayMedium!.copyWith(color: Colors.white)),
+                  child: SelectableText(localization.hello,
+                      style: theme.textTheme.displayMedium!.copyWith(color: Colors.white)),
                 ),
                 SizedBox(height: size.height * 0.02),
-                Text(
+                SelectableText(
                   localization.occupation,
                   style: theme.textTheme.headlineLarge,
                 ),
                 SizedBox(height: size.height * 0.02),
-                Text(
-                  'I am a software developer with a passion for building and designing beautiful and functional user interfaces. I am currently a student at the University of the West Indies pursuing a BSc. in Computer Science. I am also a member of the UWI Computing Society and the UWI Mona Guild of Students.',
+                SelectableText(
+                  localization.introduction,
                   style: theme.textTheme.bodyMedium,
                 ),
-                // ElevatedButton.icon(onPressed: (){}, icon: , label: label)
                 SizedBox(height: size.height * 0.02),
                 Row(
                   children: [
@@ -55,7 +55,8 @@ class HomeWidget extends StatelessWidget {
                     EndIconButtonWidget(
                       color: colors.endIconButtonColor,
                       imageIcon: 'assets/icons/arrow_right.png',
-                      label: 'Get in touch', onTap: () {  },
+                      label: 'Get in touch',
+                      onTap: () {},
                     ),
                   ],
                 ),

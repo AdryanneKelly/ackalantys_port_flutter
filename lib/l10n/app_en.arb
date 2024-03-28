@@ -7,6 +7,14 @@
         "@occupation": {
             "description": "Software Developer"
         },
+    "introduction": "Hey, guys! This is Adryanne Kelly, a full-stack software developer passionate about challenges and discovering new solutions",
+        "@introduction": {
+            "description": "Hey, guys! This is Adryanne Kelly, a full-stack software developer passionate about challenges and discovering new solutions"
+        },
+    "menuHome": "Home",
+        "@menuHome": {
+            "description": "Home"
+        },
     "menuAbout": "About",
         "@menuAbout": {
             "description": "About"

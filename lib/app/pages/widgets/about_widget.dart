@@ -65,14 +65,13 @@ class AboutWidget extends StatelessWidget {
                   SizedBox(height: size.height * 0.02),
                   Text(
                     'About me',
-                    style: theme.textTheme.titleLarge!
-                        .copyWith(color: colors.titleSessionColor),
+                    style: theme.textTheme.titleLarge!.copyWith(color: colors.titleSessionColor),
                   ),
                   SizedBox(height: size.height * 0.02),
                   SizedBox(
                     width: size.width * 0.4,
                     child: Text(
-                      'I’m a passionate software developer looking for my first international oppotunity',
+                      'Caminhando pela minha jornada profissional na tecnologia, sempre em busca de novos desafios e aprendizados.',
                       style: theme.textTheme.headlineLarge,
                     ),
                   ),
@@ -80,7 +79,7 @@ class AboutWidget extends StatelessWidget {
                   SizedBox(
                     width: size.width * 0.4,
                     child: Text(
-                      'I am a software developer with a passion for building and designing beautiful and functional user interfaces. I am currently a student at the University of the West Indies pursuing a BSc. in Computer Science. I am also a member of the UWI Computing Society and the UWI Mona Guild of Students.',
+                      'Olá pessoal! Sou Adryanne, uma desenvolvedora de software full-stack formada em Análise e Desenvolvimento de Sistemas pela Faculdade Lourenço Filho e atualmente pós-graduanda em Engenharia de Software. Atuante na Orbe Telecom, como Analista de Sistemas, onde transformo desafios em soluções criativas. \n\nMinha expertise abrange stacks como PHP, Laravel e Flutter, moldando meu percurso no desenvolvimento de software. \n\nNos momentos off-code, leitura e jogos é minha paixão. Afinal, a vida ganha um toque especial quando equilibramos trabalho, lazer e uma boa dose de código.',
                       style: theme.textTheme.bodyMedium,
                     ),
                   ),

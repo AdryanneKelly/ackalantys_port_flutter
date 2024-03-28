@@ -105,6 +105,18 @@ abstract class AppLocalizations {
   /// **'Software Developer'**
   String get occupation;
 
+  /// Hey, guys! This is Adryanne Kelly, a full-stack software developer passionate about challenges and discovering new solutions
+  ///
+  /// In en, this message translates to:
+  /// **'Hey, guys! This is Adryanne Kelly, a full-stack software developer passionate about challenges and discovering new solutions'**
+  String get introduction;
+
+  /// Home
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get menuHome;
+
   /// About
   ///
   /// In en, this message translates to:

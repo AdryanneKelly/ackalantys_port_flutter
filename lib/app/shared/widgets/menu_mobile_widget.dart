@@ -84,7 +84,7 @@ class MenuMobileWidget extends StatelessWidget {
             ),
             ListTile(
               leading: Icon(Icons.home, color: colors.drawerMenuIconColor),
-              title: Text('Home', style: theme.textTheme.labelLarge),
+              title: Text(localization.menuHome, style: theme.textTheme.labelLarge),
               onTap: () {
                 onMenuClick(1);
                 Navigator.pop(context);

@@ -1,6 +1,8 @@
 {
     "hello": "Oi, eu sou Adryanne Kelly",
     "occupation": "Desenvolvedora de Software",
+    "introduction": "Oi, pessoal! Aqui é Adryanne Kelly, uma desenvolvedora de software full-stack apaixonada em desafios e no descobrimento de novas soluções",
+    "menuHome": "Início",
     "menuAbout": "Sobre",
     "menuProject": "Projetos",
     "menuContact": "Contato"

@@ -1,6 +1,7 @@
 import 'package:ackalantys/app/controller/language_controller.dart';
 import 'package:ackalantys/app/controller/theme_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 
 class MenuWidget extends StatelessWidget implements PreferredSizeWidget {
@@ -16,6 +17,7 @@ class MenuWidget extends StatelessWidget implements PreferredSizeWidget {
     final theme = Theme.of(context);
     final themeController = Provider.of<ThemeController>(context);
     final languageController = Provider.of<LanguageController>(context);
+    final localization = AppLocalizations.of(context)!;
     return AppBar(
       titleSpacing: size.width * 0.02,
       title: RichText(
@@ -30,28 +32,28 @@ class MenuWidget extends StatelessWidget implements PreferredSizeWidget {
       actions: [
         TextButton(
           onPressed: () => onMenuClick(1),
-          child: Text('Home', style: theme.textTheme.labelLarge),
+          child: Text(localization.menuHome, style: theme.textTheme.labelLarge),
         ),
         SizedBox(
           width: size.width * 0.01,
         ),
         TextButton(
           onPressed: () => onMenuClick(2),
-          child: Text('About', style: theme.textTheme.labelLarge),
+          child: Text(localization.menuAbout, style: theme.textTheme.labelLarge),
         ),
         SizedBox(
           width: size.width * 0.01,
         ),
         TextButton(
           onPressed: () => onMenuClick(3),
-          child: Text('Projects', style: theme.textTheme.labelLarge),
+          child: Text(localization.menuProject, style: theme.textTheme.labelLarge),
         ),
         SizedBox(
           width: size.width * 0.01,
         ),
         TextButton(
           onPressed: () => onMenuClick(4),
-          child: Text('Contact', style: theme.textTheme.labelLarge),
+          child: Text(localization.menuContact, style: theme.textTheme.labelLarge),
         ),
         SizedBox(
           width: size.width * 0.01,
