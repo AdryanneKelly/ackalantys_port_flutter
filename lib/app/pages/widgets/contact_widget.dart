@@ -2,6 +2,7 @@ import 'package:ackalantys/app/controller/message_controller.dart';
 import 'package:ackalantys/app/pages/widgets/end_icon_button_widget.dart';
 import 'package:ackalantys/app/shared/themes/color_extension.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ContactWidget extends StatelessWidget {
   const ContactWidget({super.key});
@@ -11,6 +12,7 @@ class ContactWidget extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     final theme = Theme.of(context);
     final colors = theme.extension<ColorExtension>()!;
+    final localization = AppLocalizations.of(context)!;
     TextEditingController nameController = TextEditingController();
     TextEditingController emailController = TextEditingController();
     TextEditingController messageController = TextEditingController();
@@ -36,7 +38,7 @@ class ContactWidget extends StatelessWidget {
                     height: size.height * 0.02,
                   ),
                   Text(
-                    'Contact',
+                    localization.contact,
                     style: theme.textTheme.titleLarge!.copyWith(
                       color: colors.titleSessionColor,
                     ),
@@ -46,7 +48,7 @@ class ContactWidget extends StatelessWidget {
                   ),
                   SizedBox(
                     width: size.width * 0.3,
-                    child: Text('Enjoyed my work? Let’s work together', style: theme.textTheme.headlineLarge),
+                    child: Text(localization.contactTitle, style: theme.textTheme.headlineLarge),
                   ),
                   SizedBox(
                     height: size.height * 0.02,
@@ -54,7 +56,7 @@ class ContactWidget extends StatelessWidget {
                   SizedBox(
                     width: size.width * 0.3,
                     child: Text(
-                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisi eget nunc ultricies aliquet. Sed vitae nisi eget nunc ultricies aliquet.',
+                      localization.contactDescription,
                       style: theme.textTheme.bodyMedium,
                     ),
                   ),
@@ -98,12 +100,12 @@ class ContactWidget extends StatelessWidget {
                     children: [
                       TextFormField(
                         controller: nameController,
-                        decoration: const InputDecoration(
-                          hintText: 'Name',
+                        decoration: InputDecoration(
+                          hintText: localization.contactHintName,
                         ),
                         validator: (value) {
                           if (value!.isEmpty) {
-                            return 'Please enter a name';
+                            return localization.contactNameValidation;
                           }
                           return null;
                         },
@@ -113,12 +115,12 @@ class ContactWidget extends StatelessWidget {
                       ),
                       TextFormField(
                         controller: emailController,
-                        decoration: const InputDecoration(
-                          hintText: 'Email',
+                        decoration: InputDecoration(
+                          hintText: localization.contactHintEmail,
                         ),
                         validator: (value) {
                           if (value!.isEmpty || !value.contains('@')) {
-                            return 'Please enter an email';
+                            return localization.contactEmailValidation;
                           }
                           return null;
                         },
@@ -130,12 +132,12 @@ class ContactWidget extends StatelessWidget {
                         controller: messageController,
                         minLines: 6,
                         maxLines: 20,
-                        decoration: const InputDecoration(
-                          hintText: 'Your Message',
+                        decoration: InputDecoration(
+                          hintText: localization.contactHintMessage,
                         ),
                         validator: (value) {
                           if (value!.isEmpty) {
-                            return 'Please enter a message';
+                            return localization.contactMessageValidation;
                           }
                           return null;
                         },
@@ -146,7 +148,7 @@ class ContactWidget extends StatelessWidget {
                       EndIconButtonWidget(
                         color: colors.endIconButtonColor,
                         imageIcon: 'assets/icons/arrow_right.png',
-                        label: 'Send message',
+                        label: localization.contactSendMessage,
                         onTap: () {
                           if (formKey.currentState!.validate()) {
                             controller.sendMessage(

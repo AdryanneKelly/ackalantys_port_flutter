@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class EndIconButtonWidget extends StatelessWidget {
-  const EndIconButtonWidget({super.key, required this.label, required this.color, required this.imageIcon, required this.onTap});
+  const EndIconButtonWidget(
+      {super.key, required this.label, required this.color, required this.imageIcon, required this.onTap});
 
   final String label;
   final Color color;
@@ -16,7 +17,7 @@ class EndIconButtonWidget extends StatelessWidget {
       onTap: onTap,
       child: Container(
         height: size.height * 0.05,
-        width: 140,
+        width: 160,
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           color: color,

@@ -26,5 +26,101 @@
     "menuContact": "Contact",
         "@menuContact": {
             "description": "Contact"
+        },
+    "myresume": "My resume",
+        "@myresume": {
+            "description": "My resume"
+        },
+    "getInTouch": "Get in touch",
+        "@getInTouch":{
+            "description": "Get in touch"
+        },
+    "aboutMe": "About me",
+        "@aboutMe": {
+            "description": "About me"
+        },
+    "aboutMeTitle": "I'm on my professional journey in technology, always looking for new challenges and learning.",
+        "@aboutMeTitle": {
+            "description": "I'm on my professional journey in technology, always looking for new challenges and learning."
+        },
+    "aboutMeDescription": "Hi guys! I'm Adryanne, a full-stack software developer with a degree in Systems Analysis and Development from Faculdade Lourenço Filho and currently a postgraduate student in Software Engineering. I work at Orbe Telecom as a Systems Analyst, where I transform challenges into creative solutions. \n\nMy expertise covers stacks such as PHP, Laravel and Flutter, shaping my path in software development. \n\nIn off-code moments, reading and gaming are my passion. After all, life takes on a special touch when we balance work, leisure and a good dose of code.",
+        "@aboutMeDescription":{
+            "description": "Hi guys! I'm Adryanne, a full-stack software developer with a degree in Systems Analysis and Development from Faculdade Lourenço Filho and currently a postgraduate student in Software Engineering. I work at Orbe Telecom as a Systems Analyst, where I transform challenges into creative solutions. \n\nMy expertise covers stacks such as PHP, Laravel and Flutter, shaping my path in software development. \n\nIn off-code moments, reading and gaming are my passion. After all, life takes on a special touch when we balance work, leisure and a good dose of code."
+        },
+    "projects": "Projects",
+        "@projects": {
+            "description": "Projects"
+        },
+    "projectsTitle": "Take a look at my highlighted projects",
+        "@projectsTitle": {
+            "description": "Take a look at my highlighted projects"
+        },
+    "projectTitle1": "Project Title 1",
+        "@projectTitle1": {
+            "description": "Project Title 1"
+        },
+    "projectTitle2": "Project Title 2",
+        "@projectTitle2": {
+            "description": "Project Title 2"
+        },
+    "projectTitle3": "Project Title 3",
+        "@projectTitle3": {
+            "description": "Project Title 3"
+        },
+    "descriptionProject1": "Project description 1",
+        "@descriptionProject1": {
+            "description": "Project description 1"
+        },
+    "descriptionProject2": "Project description 2",
+        "@descriptionProject2": {
+            "description": "Project description 2"
+        },
+    "descriptionProject3": "Project description 3",
+        "@descriptionProject3": {
+            "description": "Project description 3"
+        },
+    "seeAll": "See all",
+        "@seeAll": {
+            "description": "See all"
+        },
+    "contact": "Contact",
+        "@contact": {
+            "description": "Contact"
+        },
+    "contactTitle": "Enjoyed my work? Let’s work together",
+        "@contactTitle": {
+            "description": "Enjoyed my work? Let’s work together"
+        },
+    "contactDescription": "Contact me if you want to be my friend and we can make network together",
+        "@contactDescription": {
+            "description": "Contact me if you want to be my friend and we can make network together"
+        },
+    "contactHintName": "Name",
+        "@contactHintName":{
+            "description": "Name"
+        },
+    "contactNameValidation": "Please enter a name",
+        "@contactNameValidation": {
+            "description": "Please enter a name"
+        },
+     "contactHintEmail": "Email",
+        "@contactHintEmail":{
+            "description": "Email"
+        },
+     "contactEmailValidation": "Please enter an email",
+        "@contactEmailValidation": {
+            "description": "Please enter an email"
+        },
+     "contactHintMessage": "Your message",
+        "@contactHintMessage":{
+            "description": "Your message"
+        },
+      "contactMessageValidation": "Please enter a message",
+        "@contactMessageValidation": {
+            "description": "Please enter a message"
+        },
+    "contactSendMessage": "Send message",
+        "@contactSendMessage": {
+            "description": "Send message"
         }
 }

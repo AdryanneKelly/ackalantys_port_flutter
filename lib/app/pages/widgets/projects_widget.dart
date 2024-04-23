@@ -2,6 +2,7 @@ import 'package:ackalantys/app/pages/widgets/card_project_widget.dart';
 import 'package:ackalantys/app/pages/widgets/end_icon_button_widget.dart';
 import 'package:ackalantys/app/shared/themes/color_extension.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ProjectsWidget extends StatelessWidget {
   const ProjectsWidget({super.key});
@@ -11,6 +12,7 @@ class ProjectsWidget extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     final theme = Theme.of(context);
     final colors = theme.extension<ColorExtension>()!;
+    final localization = AppLocalizations.of(context)!;
     return SizedBox(
       height: size.height,
       child: Padding(
@@ -18,44 +20,41 @@ class ProjectsWidget extends StatelessWidget {
         child: Column(
           children: [
             Text(
-              'Projects',
+              localization.projects,
               style: theme.textTheme.titleLarge!.copyWith(
                 color: colors.titleSessionColor,
               ),
             ),
             SizedBox(height: size.height * 0.02),
             Text(
-              'Take a look at my highlighted projects',
+              localization.projectsTitle,
               style: theme.textTheme.headlineLarge,
             ),
             SizedBox(height: size.height * 0.05),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const CardProjectWidget(
+                CardProjectWidget(
                   date: 'Jul - Dec 2023',
                   imageProject: 'assets/images/image_project.png',
-                  title: 'Project 1',
-                  description:
-                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc ut dignissim.',
+                  title: localization.projectTitle1,
+                  description: localization.descriptionProject1,
                   stack: 'assets/icons/tailwind.png',
                 ),
                 SizedBox(width: size.width * 0.02),
-                const CardProjectWidget(
+                CardProjectWidget(
                   date: 'Jul - Dec 2023',
                   imageProject: 'assets/images/image_project.png',
-                  title: 'Project 1',
-                  description:
-                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc ut dignissim.',
+                  title: localization.projectTitle2,
+                  description: localization.descriptionProject2,
                   stack: 'assets/icons/tailwind.png',
                 ),
                 SizedBox(width: size.width * 0.02),
-                const CardProjectWidget(
+                CardProjectWidget(
                   date: 'Jul - Dec 2023',
                   imageProject: 'assets/images/image_project.png',
-                  title: 'Project 1',
-                  description:
-                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc ut dignissim.',
+                  title: localization.projectTitle3,
+                  description: localization.descriptionProject3,
                   stack: 'assets/icons/tailwind.png',
                 ),
               ],
@@ -65,7 +64,8 @@ class ProjectsWidget extends StatelessWidget {
               child: EndIconButtonWidget(
                 color: colors.secondaryEndIconButtonColor,
                 imageIcon: 'assets/icons/arrow_right.png',
-                label: 'See all', onTap: () {  },
+                label: localization.seeAll,
+                onTap: () {},
               ),
             )
           ],

@@ -49,13 +49,13 @@ class HomeWidget extends StatelessWidget {
                     StartIconButtonWidget(
                       color: colors.startIconButttonColor,
                       imageIcon: 'assets/icons/document.png',
-                      label: 'My resume',
+                      label: localization.myresume,
                     ),
                     SizedBox(width: size.width * 0.005),
                     EndIconButtonWidget(
                       color: colors.endIconButtonColor,
                       imageIcon: 'assets/icons/arrow_right.png',
-                      label: 'Get in touch',
+                      label: localization.getInTouch,
                       onTap: () {},
                     ),
                   ],
