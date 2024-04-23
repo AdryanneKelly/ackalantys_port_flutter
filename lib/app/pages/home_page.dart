@@ -4,6 +4,7 @@ import 'package:ackalantys/app/pages/widgets/footer_widget.dart';
 import 'package:ackalantys/app/pages/widgets/home_widget.dart';
 import 'package:ackalantys/app/pages/widgets/mobile_widgets/about_mobile_widget.dart';
 import 'package:ackalantys/app/pages/widgets/mobile_widgets/contact_mobile_widget.dart';
+import 'package:ackalantys/app/pages/widgets/mobile_widgets/footer_mobile_widget.dart';
 import 'package:ackalantys/app/pages/widgets/mobile_widgets/home_mobile_widget.dart';
 import 'package:ackalantys/app/pages/widgets/mobile_widgets/projects_mobile_widget.dart';
 import 'package:ackalantys/app/pages/widgets/projects_widget.dart';
@@ -106,7 +107,7 @@ class _HomePageState extends State<HomePage> {
                   AboutMobileWidget(key: aboutKey),
                   ProjectsMobileWidget(key: projectsKey),
                   ContactMobileWidget(key: contactKey),
-                  const FooterWidget()
+                  const FooterMobileWidget()
                 ],
               );
             }

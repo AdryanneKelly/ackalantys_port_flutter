@@ -2,6 +2,7 @@ import 'package:ackalantys/app/pages/widgets/end_icon_button_widget.dart';
 import 'package:ackalantys/app/pages/widgets/mobile_widgets/card_project_mobile_widget.dart';
 import 'package:ackalantys/app/shared/themes/color_extension.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ProjectsMobileWidget extends StatelessWidget {
   const ProjectsMobileWidget({super.key});
@@ -11,6 +12,7 @@ class ProjectsMobileWidget extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     final theme = Theme.of(context);
     final colors = theme.extension<ColorExtension>()!;
+    final localization = AppLocalizations.of(context)!;
     return SizedBox(
       // height: size.height,
       child: Padding(
@@ -18,14 +20,14 @@ class ProjectsMobileWidget extends StatelessWidget {
         child: Column(
           children: [
             Text(
-              'Projects',
+              localization.projects,
               style: theme.textTheme.titleLarge!.copyWith(
                 color: colors.titleSessionColor,
               ),
             ),
             SizedBox(height: size.height * 0.02),
             Text(
-              'Take a look at my highlighted projects',
+              localization.projectsTitle,
               textAlign: TextAlign.center,
               style: theme.textTheme.headlineLarge,
             ),
@@ -33,30 +35,27 @@ class ProjectsMobileWidget extends StatelessWidget {
             Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const CardProjectMobileWidget(
+                CardProjectMobileWidget(
                   date: 'Jul - Dec 2023',
                   imageProject: 'assets/images/image_project.png',
-                  title: 'Project 1',
-                  description:
-                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc ut dignissim.',
+                  title: localization.projectTitle1,
+                  description: localization.descriptionProject1,
                   stack: 'assets/icons/tailwind.png',
                 ),
                 SizedBox(height: size.height * 0.03),
-                const CardProjectMobileWidget(
+                CardProjectMobileWidget(
                   date: 'Jul - Dec 2023',
                   imageProject: 'assets/images/image_project.png',
-                  title: 'Project 1',
-                  description:
-                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc ut dignissim.',
+                  title: localization.projectTitle2,
+                  description: localization.descriptionProject2,
                   stack: 'assets/icons/tailwind.png',
                 ),
                 SizedBox(height: size.height * 0.03),
-                const CardProjectMobileWidget(
+                CardProjectMobileWidget(
                   date: 'Jul - Dec 2023',
                   imageProject: 'assets/images/image_project.png',
-                  title: 'Project 1',
-                  description:
-                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget nunc ut dignissim.',
+                  title: localization.projectTitle3,
+                  description: localization.descriptionProject3,
                   stack: 'assets/icons/tailwind.png',
                 ),
               ],
@@ -66,7 +65,8 @@ class ProjectsMobileWidget extends StatelessWidget {
               child: EndIconButtonWidget(
                 color: colors.secondaryEndIconButtonColor,
                 imageIcon: 'assets/icons/arrow_right.png',
-                label: 'See all', onTap: () {  },
+                label: localization.seeAll,
+                onTap: () {},
               ),
             )
           ],

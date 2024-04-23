@@ -1,6 +1,7 @@
 import 'package:ackalantys/app/pages/widgets/start_icon_button_widget.dart';
 import 'package:ackalantys/app/shared/themes/color_extension.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class AboutMobileWidget extends StatelessWidget {
   const AboutMobileWidget({super.key});
@@ -10,6 +11,7 @@ class AboutMobileWidget extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     final theme = Theme.of(context);
     final colors = theme.extension<ColorExtension>()!;
+    final localization = AppLocalizations.of(context)!;
     return SizedBox(
       // height: size.height,
       child: Card(
@@ -65,14 +67,14 @@ class AboutMobileWidget extends StatelessWidget {
                   ),
                   SizedBox(height: size.height * 0.02),
                   Text(
-                    'About me',
+                    localization.aboutMe,
                     style: theme.textTheme.titleLarge!.copyWith(color: colors.titleSessionColor),
                   ),
                   SizedBox(height: size.height * 0.02),
                   SizedBox(
                     width: size.width * 0.8,
                     child: Text(
-                      'I’m a passionate software developer looking for my first international oppotunity',
+                      localization.aboutMeTitle,
                       style: theme.textTheme.headlineLarge,
                     ),
                   ),
@@ -80,7 +82,7 @@ class AboutMobileWidget extends StatelessWidget {
                   SizedBox(
                     width: size.width * 0.8,
                     child: Text(
-                      'I am a software developer with a passion for building and designing beautiful and functional user interfaces. I am currently a student at the University of the West Indies pursuing a BSc. in Computer Science. I am also a member of the UWI Computing Society and the UWI Mona Guild of Students.',
+                      localization.aboutMeDescription,
                       style: theme.textTheme.bodyMedium,
                     ),
                   ),
@@ -88,7 +90,7 @@ class AboutMobileWidget extends StatelessWidget {
                   StartIconButtonWidget(
                     color: colors.secondaryStartIconButtonColor,
                     imageIcon: 'assets/icons/document.png',
-                    label: 'My resume',
+                    label: localization.myresume,
                   ),
                 ],
               )

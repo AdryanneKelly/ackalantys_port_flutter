@@ -1,6 +1,7 @@
 import 'package:ackalantys/app/pages/widgets/end_icon_button_widget.dart';
 import 'package:ackalantys/app/shared/themes/color_extension.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
 class ContactMobileWidget extends StatelessWidget {
   const ContactMobileWidget({super.key});
@@ -10,6 +11,7 @@ class ContactMobileWidget extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     final theme = Theme.of(context);
     final colors = theme.extension<ColorExtension>()!;
+    final localization = AppLocalizations.of(context)!;
     return SizedBox(
       // height: size.height * 0.8,
       child: Padding(
@@ -36,7 +38,7 @@ class ContactMobileWidget extends StatelessWidget {
                         height: size.height * 0.02,
                       ),
                       Text(
-                        'Contact',
+                        localization.contact,
                         style: theme.textTheme.titleLarge!.copyWith(
                           color: colors.titleSessionColor,
                         ),
@@ -46,7 +48,7 @@ class ContactMobileWidget extends StatelessWidget {
                       ),
                       SizedBox(
                         width: size.width * 0.8,
-                        child: Text('Enjoyed my work? Let’s work together', style: theme.textTheme.headlineLarge),
+                        child: Text(localization.contactTitle, style: theme.textTheme.headlineLarge),
                       ),
                       SizedBox(
                         height: size.height * 0.02,
@@ -54,7 +56,7 @@ class ContactMobileWidget extends StatelessWidget {
                       SizedBox(
                         width: size.width * 0.8,
                         child: Text(
-                          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae nisi eget nunc ultricies aliquet. Sed vitae nisi eget nunc ultricies aliquet.',
+                          localization.contactDescription,
                           style: theme.textTheme.bodyMedium,
                         ),
                       ),
@@ -95,27 +97,27 @@ class ContactMobileWidget extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const TextField(
+                      TextField(
                         decoration: InputDecoration(
-                          hintText: 'Name',
+                          hintText: localization.contactHintName,
                         ),
                       ),
                       SizedBox(
                         height: size.height * 0.02,
                       ),
-                      const TextField(
+                      TextField(
                         decoration: InputDecoration(
-                          hintText: 'Email',
+                          hintText: localization.contactHintEmail,
                         ),
                       ),
                       SizedBox(
                         height: size.height * 0.02,
                       ),
-                      const TextField(
+                      TextField(
                         minLines: 6,
                         maxLines: 20,
                         decoration: InputDecoration(
-                          hintText: 'Your Message',
+                          hintText: localization.contactHintMessage,
                         ),
                       ),
                       SizedBox(
@@ -124,7 +126,8 @@ class ContactMobileWidget extends StatelessWidget {
                       EndIconButtonWidget(
                         color: colors.endIconButtonColor,
                         imageIcon: 'assets/icons/arrow_right.png',
-                        label: 'Send message', onTap: () {  },
+                        label: localization.contactSendMessage,
+                        onTap: () {},
                       )
                     ],
                   ),
