@@ -1,5 +1,5 @@
-import 'package:ackalantys/app/controller/language_controller.dart';
-import 'package:ackalantys/app/controller/theme_controller.dart';
+import 'package:ackalantys/app/controllers/language_controller.dart';
+import 'package:ackalantys/app/controllers/theme_controller.dart';
 import 'package:ackalantys/app/pages/home_page.dart';
 import 'package:ackalantys/app/shared/themes/app_theme.dart';
 import 'package:flutter/material.dart';

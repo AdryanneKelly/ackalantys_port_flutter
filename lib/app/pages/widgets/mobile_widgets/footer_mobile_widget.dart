@@ -1,4 +1,4 @@
-import 'package:ackalantys/app/controller/url_launcher_controller.dart';
+import 'package:ackalantys/app/controllers/url_launcher_controller.dart';
 import 'package:ackalantys/app/shared/urls/url_utils.dart';
 import 'package:flutter/material.dart';
 

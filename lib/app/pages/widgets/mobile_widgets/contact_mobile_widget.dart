@@ -91,45 +91,48 @@ class ContactMobileWidget extends StatelessWidget {
                     ],
                   ),
                 ),
-                SizedBox(
-                  width: size.width * 0.8,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      TextField(
-                        decoration: InputDecoration(
-                          hintText: localization.contactHintName,
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: SizedBox(
+                    // width: size.width * 0.8,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        TextField(
+                          decoration: InputDecoration(
+                            hintText: localization.contactHintName,
+                          ),
                         ),
-                      ),
-                      SizedBox(
-                        height: size.height * 0.02,
-                      ),
-                      TextField(
-                        decoration: InputDecoration(
-                          hintText: localization.contactHintEmail,
+                        SizedBox(
+                          height: size.height * 0.02,
                         ),
-                      ),
-                      SizedBox(
-                        height: size.height * 0.02,
-                      ),
-                      TextField(
-                        minLines: 6,
-                        maxLines: 20,
-                        decoration: InputDecoration(
-                          hintText: localization.contactHintMessage,
+                        TextField(
+                          decoration: InputDecoration(
+                            hintText: localization.contactHintEmail,
+                          ),
                         ),
-                      ),
-                      SizedBox(
-                        height: size.height * 0.02,
-                      ),
-                      EndIconButtonWidget(
-                        color: colors.endIconButtonColor,
-                        imageIcon: 'assets/icons/arrow_right.png',
-                        label: localization.contactSendMessage,
-                        onTap: () {},
-                      )
-                    ],
+                        SizedBox(
+                          height: size.height * 0.02,
+                        ),
+                        TextField(
+                          minLines: 6,
+                          maxLines: 20,
+                          decoration: InputDecoration(
+                            hintText: localization.contactHintMessage,
+                          ),
+                        ),
+                        SizedBox(
+                          height: size.height * 0.02,
+                        ),
+                        EndIconButtonWidget(
+                          color: colors.endIconButtonColor,
+                          imageIcon: 'assets/icons/arrow_right.png',
+                          label: localization.contactSendMessage,
+                          onTap: () {},
+                        )
+                      ],
+                    ),
                   ),
                 ),
               ],

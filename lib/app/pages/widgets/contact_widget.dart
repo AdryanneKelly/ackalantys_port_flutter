@@ -1,4 +1,4 @@
-import 'package:ackalantys/app/controller/message_controller.dart';
+import 'package:ackalantys/app/controllers/message_controller.dart';
 import 'package:ackalantys/app/pages/widgets/end_icon_button_widget.dart';
 import 'package:ackalantys/app/shared/themes/color_extension.dart';
 import 'package:flutter/material.dart';

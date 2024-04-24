@@ -100,7 +100,7 @@ class _HomePageState extends State<HomePage> {
           scrollDirection: Axis.vertical,
           controller: _scrollController,
           child: LayoutBuilder(builder: (context, constraints) {
-            if (constraints.maxWidth <= 900) {
+            if (constraints.maxWidth <= 980) {
               return Column(
                 children: [
                   HomeMobileWidget(key: homeKey),
