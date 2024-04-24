@@ -1,6 +1,9 @@
 import 'package:ackalantys/app/controllers/message_controller.dart';
+import 'package:ackalantys/app/controllers/url_launcher_controller.dart';
+import 'package:ackalantys/app/pages/components/card_contact_component.dart';
 import 'package:ackalantys/app/pages/widgets/end_icon_button_widget.dart';
 import 'package:ackalantys/app/shared/themes/color_extension.dart';
+import 'package:ackalantys/app/shared/urls/url_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -13,6 +16,7 @@ class ContactWidget extends StatelessWidget {
     final theme = Theme.of(context);
     final colors = theme.extension<ColorExtension>()!;
     final localization = AppLocalizations.of(context)!;
+    UrlLauncherController urlLauncherController = UrlLauncherController();
     TextEditingController nameController = TextEditingController();
     TextEditingController emailController = TextEditingController();
     TextEditingController messageController = TextEditingController();
@@ -65,26 +69,17 @@ class ContactWidget extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      Card(
-                        color: colors.contactSocialCardColor,
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Image.asset('assets/icons/instagram.png'),
-                        ),
+                      CardContactComponent(
+                        imageIcon: 'assets/icons/instagram.png',
+                        onTap: () => urlLauncherController.launchURL(UrlUtils.instagram),
                       ),
-                      Card(
-                        color: colors.contactSocialCardColor,
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Image.asset('assets/icons/github.png'),
-                        ),
+                      CardContactComponent(
+                        imageIcon: 'assets/icons/github.png',
+                        onTap: () => urlLauncherController.launchURL(UrlUtils.github),
                       ),
-                      Card(
-                        color: colors.contactSocialCardColor,
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Image.asset('assets/icons/linkedin.png'),
-                        ),
+                      CardContactComponent(
+                        imageIcon: 'assets/icons/linkedin.png',
+                        onTap: () => urlLauncherController.launchURL(UrlUtils.linkedin),
                       ),
                     ],
                   )

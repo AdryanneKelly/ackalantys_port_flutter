@@ -8,4 +8,12 @@ class UrlLauncherController {
       throw 'Could not launch $url';
     }
   }
+
+  void sendEmail(String email) async {
+    final Uri emailLaunchUri = Uri(
+      scheme: 'mailto',
+      path: email,
+    );
+    launchURL(emailLaunchUri.toString());
+  }
 }
