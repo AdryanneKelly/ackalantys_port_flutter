@@ -13,7 +13,7 @@ class EndIconButtonWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     final theme = Theme.of(context);
-    return GestureDetector(
+    return InkWell(
       onTap: onTap,
       child: Container(
         height: size.height * 0.05,
