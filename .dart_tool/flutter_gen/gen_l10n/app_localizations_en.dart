@@ -50,7 +50,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get projectTitle1 => 'Dev Links - Project';
 
   @override
-  String get projectTitle2 => 'Project Title 2';
+  String get projectTitle2 => 'Institutional website - Orbe Telecom';
 
   @override
   String get projectTitle3 => 'Project Title 3';
@@ -59,7 +59,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get descriptionProject1 => 'Personal project to create a personalised links page ';
 
   @override
-  String get descriptionProject2 => 'Project description 2';
+  String get descriptionProject2 => 'Orbe Telecom\'s corporate website';
 
   @override
   String get descriptionProject3 => 'Project description 3';

@@ -187,10 +187,10 @@ abstract class AppLocalizations {
   /// **'Dev Links - Project'**
   String get projectTitle1;
 
-  /// Project Title 2
+  /// Institutional website - Orbe Telecom
   ///
   /// In en, this message translates to:
-  /// **'Project Title 2'**
+  /// **'Institutional website - Orbe Telecom'**
   String get projectTitle2;
 
   /// Project Title 3
@@ -205,10 +205,10 @@ abstract class AppLocalizations {
   /// **'Personal project to create a personalised links page '**
   String get descriptionProject1;
 
-  /// Project description 2
+  /// Orbe Telecom's corporate website
   ///
   /// In en, this message translates to:
-  /// **'Project description 2'**
+  /// **'Orbe Telecom\'s corporate website'**
   String get descriptionProject2;
 
   /// Project description 3
