@@ -63,6 +63,8 @@ class CardProjectMobileWidget extends StatelessWidget {
                   SizedBox(height: size.height * 0.01),
                   Text(
                     description,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
                     style: theme.textTheme.bodyMedium,
                   ),
                 ],

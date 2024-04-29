@@ -38,7 +38,7 @@ class ProjectsWidget extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 CardProjectWidget(
-                  date: 'Jul - Dec 2023',
+                  date: '2024',
                   imageProject: 'assets/images/image_project.png',
                   title: localization.projectTitle1,
                   description: localization.descriptionProject1,
@@ -46,7 +46,7 @@ class ProjectsWidget extends StatelessWidget {
                 ),
                 SizedBox(width: size.width * 0.02),
                 CardProjectWidget(
-                  date: 'Jul - Dec 2023',
+                  date: '2023',
                   imageProject: 'assets/images/image_project.png',
                   title: localization.projectTitle2,
                   description: localization.descriptionProject2,
@@ -54,7 +54,7 @@ class ProjectsWidget extends StatelessWidget {
                 ),
                 SizedBox(width: size.width * 0.02),
                 CardProjectWidget(
-                  date: 'Jul - Dec 2023',
+                  date: '',
                   imageProject: 'assets/images/image_project.png',
                   title: localization.projectTitle3,
                   description: localization.descriptionProject3,

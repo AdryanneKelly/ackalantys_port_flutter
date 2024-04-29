@@ -17,7 +17,7 @@ class HomeMobileWidget extends StatelessWidget {
     final localization = AppLocalizations.of(context)!;
     UrlLauncherController urlLauncherController = UrlLauncherController();
     return SizedBox(
-      height: size.height,
+      // height: size.height,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
