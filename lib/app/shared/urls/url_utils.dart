@@ -6,4 +6,6 @@ class UrlUtils {
   static const repositoriesGithub = 'https://github.com/AdryanneKelly?tab=repositories';
   static const email = 'adryannekelly.dev@gmail.com';
   static const resume = 'https://drive.google.com/file/d/17UwTehRR-lXgVN-JaRE-mejP63UBMrZq/view?usp=drive_link';
+  static const botUrl =
+      "https://discord.com/api/webhooks/1234473417139294309/gciaJy7MNUF74AN5gmLIq3fpM8Y1hBd7fPEN5OamPbh9dn68iwi65r4XjNHGRjZ0bRnv";
 }

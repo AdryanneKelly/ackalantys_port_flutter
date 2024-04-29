@@ -1,24 +1,13 @@
 import 'dart:convert';
 
-import 'package:http/http.dart' as http;
+import 'package:ackalantys/app/client/http_client.dart';
+import 'package:ackalantys/app/shared/urls/url_utils.dart';
 
 class MessageController {
-  final url =
-      "https://discord.com/api/webhooks/1234473417139294309/gciaJy7MNUF74AN5gmLIq3fpM8Y1hBd7fPEN5OamPbh9dn68iwi65r4XjNHGRjZ0bRnv";
+  IHttpClient httpClient = HttpClient();
   Future<void> sendMessage({required String message, required String email, required String name}) async {
-    // try {
-    //   await supabase.from('messages').insert({
-    //     'message': message,
-    //     'email': email,
-    //     'name': name,
-    //   });
-    //   print('Message sent');
-    // } on PostgrestException catch (e) {
-    //   print('Error: ${e.message}');
-    // } catch (e) {
-    //   print('Error: $e');
-    // }
-    final response = await http.post(Uri.parse(url),
+    final response = await httpClient.post(
+        url: UrlUtils.botUrl,
         body: jsonEncode({
           "embeds": [
             {
@@ -30,8 +19,6 @@ class MessageController {
               ]
             }
           ]
-        }),
-        headers: {"Content-Type": "application/json"});
-    print(response.body);
+        }));
   }
 }
