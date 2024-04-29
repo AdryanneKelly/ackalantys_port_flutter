@@ -22,7 +22,10 @@ class CardContactComponent extends StatelessWidget {
         color: colors.contactSocialCardColor,
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Image.asset(imageIcon),
+          child: Image.asset(
+            imageIcon,
+            height: 25,
+          ),
         ),
       ),
     );
