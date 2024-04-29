@@ -35,19 +35,19 @@ class AppLocalizationsPt extends AppLocalizations {
   String get aboutMe => 'Sobre mim';
 
   @override
-  String get aboutMeTitle => 'Caminhando pela minha jornada profissional na tecnologia, sempre em busca de novos desafios e aprendizados.';
+  String get aboutMeTitle => 'Um pouco de mim...';
 
   @override
-  String get aboutMeDescription => 'Olá pessoal! Sou Adryanne, uma desenvolvedora de software full-stack formada em Análise e Desenvolvimento de Sistemas pela Faculdade Lourenço Filho e atualmente pós-graduanda em Engenharia de Software. Atuante na Orbe Telecom, como Analista de Sistemas, onde transformo desafios em soluções criativas. \n\nMinha expertise abrange stacks como PHP, Laravel e Flutter, moldando meu percurso no desenvolvimento de software. \n\nNos momentos off-code, leitura e jogos é minha paixão. Afinal, a vida ganha um toque especial quando equilibramos trabalho, lazer e uma boa dose de código.';
+  String get aboutMeDescription => 'E aí pessoal! Sou Adryanne (também conhecida na comunidade como Ackalantys), desenvolvedora de software full-stack formada em Análise e Desenvolvimento de Sistemas e atualmente pós-graduanda em Engenharia de Software. Atuante como Analista de Sistemas, onde aplico, aprendo e desenvolvo minhas habilidades. \n\nMinha expertise abrange stacks como PHP, Laravel e Flutter, moldando meu percurso no desenvolvimento de software. \n\nNos momentos off-code, leitura e jogos é minha paixão (bora um lolzin?).';
 
   @override
   String get projects => 'Projetos';
 
   @override
-  String get projectsTitle => 'Veja os meus projetos em destaque';
+  String get projectsTitle => 'Veja alguns de meus projetos';
 
   @override
-  String get projectTitle1 => 'Titulo do projeto 1';
+  String get projectTitle1 => 'Dev Links - Projeto';
 
   @override
   String get projectTitle2 => 'Titulo do projeto 2';
@@ -56,7 +56,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get projectTitle3 => 'Titulo do projeto 3';
 
   @override
-  String get descriptionProject1 => 'Descrição do projeto 1';
+  String get descriptionProject1 => 'Projeto pessoal de criação personalizada de página de links';
 
   @override
   String get descriptionProject2 => 'Descrição do projeto 2';
@@ -71,10 +71,10 @@ class AppLocalizationsPt extends AppLocalizations {
   String get contact => 'Contato';
 
   @override
-  String get contactTitle => 'Gostou do meu trabalho? Vamos trabalhar juntos';
+  String get contactTitle => 'Gostou do meu trabalho? Mande-me uma mensagem';
 
   @override
-  String get contactDescription => 'Bora se conhecer ai bixo manda uma mensagem pra mami';
+  String get contactDescription => 'Cntre em contato comigo enviando uma mensagem ou pelas minhas redes sociais';
 
   @override
   String get contactHintName => 'Seu nome';

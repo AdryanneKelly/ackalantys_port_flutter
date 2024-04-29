@@ -153,20 +153,20 @@ abstract class AppLocalizations {
   /// **'About me'**
   String get aboutMe;
 
-  /// I'm on my professional journey in technology, always looking for new challenges and learning.
+  /// A bit of me...
   ///
   /// In en, this message translates to:
-  /// **'I\'m on my professional journey in technology, always looking for new challenges and learning.'**
+  /// **'A bit of me...'**
   String get aboutMeTitle;
 
-  /// Hi guys! I'm Adryanne, a full-stack software developer with a degree in Systems Analysis and Development from Faculdade Lourenço Filho and currently a postgraduate student in Software Engineering. I work at Orbe Telecom as a Systems Analyst, where I transform challenges into creative solutions.
+  /// Hey guys! I'm Adryanne (also known in the community as Ackalantys), a full-stack software developer with a degree in Systems Analysis and Development and currently a postgraduate student in Software Engineering. I work as a Systems Analyst, where I apply, learn and develop my skills.
   ///
-  /// My expertise covers stacks such as PHP, Laravel and Flutter, shaping my path in software development.
+  /// My expertise covers stacks such as PHP, Laravel and Flutter, moulding my path in software development.
   ///
-  /// In off-code moments, reading and gaming are my passion. After all, life takes on a special touch when we balance work, leisure and a good dose of code.
+  /// In off-code moments, reading and gaming are my passion.
   ///
   /// In en, this message translates to:
-  /// **'Hi guys! I\'m Adryanne, a full-stack software developer with a degree in Systems Analysis and Development from Faculdade Lourenço Filho and currently a postgraduate student in Software Engineering. I work at Orbe Telecom as a Systems Analyst, where I transform challenges into creative solutions. \n\nMy expertise covers stacks such as PHP, Laravel and Flutter, shaping my path in software development. \n\nIn off-code moments, reading and gaming are my passion. After all, life takes on a special touch when we balance work, leisure and a good dose of code.'**
+  /// **'Hey guys! I\'m Adryanne (also known in the community as Ackalantys), a full-stack software developer with a degree in Systems Analysis and Development and currently a postgraduate student in Software Engineering. I work as a Systems Analyst, where I apply, learn and develop my skills. \n\nMy expertise covers stacks such as PHP, Laravel and Flutter, moulding my path in software development. \n\nIn off-code moments, reading and gaming are my passion.'**
   String get aboutMeDescription;
 
   /// Projects
@@ -175,16 +175,16 @@ abstract class AppLocalizations {
   /// **'Projects'**
   String get projects;
 
-  /// Take a look at my highlighted projects
+  /// Take a look at some of my projects
   ///
   /// In en, this message translates to:
-  /// **'Take a look at my highlighted projects'**
+  /// **'Take a look at some of my projects'**
   String get projectsTitle;
 
   /// Project Title 1
   ///
   /// In en, this message translates to:
-  /// **'Project Title 1'**
+  /// **'Dev Links - Project'**
   String get projectTitle1;
 
   /// Project Title 2
@@ -199,10 +199,10 @@ abstract class AppLocalizations {
   /// **'Project Title 3'**
   String get projectTitle3;
 
-  /// Project description 1
+  /// Personal project to create a personalised links page
   ///
   /// In en, this message translates to:
-  /// **'Project description 1'**
+  /// **'Personal project to create a personalised links page '**
   String get descriptionProject1;
 
   /// Project description 2
@@ -229,16 +229,16 @@ abstract class AppLocalizations {
   /// **'Contact'**
   String get contact;
 
-  /// Enjoyed my work? Let’s work together
+  /// Enjoyed my work? Send me a message
   ///
   /// In en, this message translates to:
-  /// **'Enjoyed my work? Let’s work together'**
+  /// **'Enjoyed my work? Send me a message'**
   String get contactTitle;
 
-  /// Contact me if you want to be my friend and we can make network together
+  /// Contact me by sending me a message or via my social networks
   ///
   /// In en, this message translates to:
-  /// **'Contact me if you want to be my friend and we can make network together'**
+  /// **'Contact me by sending me a message or via my social networks'**
   String get contactDescription;
 
   /// Name
