@@ -1,5 +1,5 @@
 import 'package:ackalantys/app/controllers/url_launcher_controller.dart';
-import 'package:ackalantys/app/pages/widgets/card_project_widget.dart';
+import 'package:ackalantys/app/pages/components/card_project_widget.dart';
 import 'package:ackalantys/app/pages/components/end_icon_button_widget.dart';
 import 'package:ackalantys/app/shared/themes/color_extension.dart';
 import 'package:ackalantys/app/shared/urls/url_utils.dart';
