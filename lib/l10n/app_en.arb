@@ -39,23 +39,23 @@
         "@aboutMe": {
             "description": "About me"
         },
-    "aboutMeTitle": "I'm on my professional journey in technology, always looking for new challenges and learning.",
+    "aboutMeTitle": "A bit of me...",
         "@aboutMeTitle": {
-            "description": "I'm on my professional journey in technology, always looking for new challenges and learning."
+            "description": "A bit of me..."
         },
-    "aboutMeDescription": "Hi guys! I'm Adryanne, a full-stack software developer with a degree in Systems Analysis and Development from Faculdade Lourenço Filho and currently a postgraduate student in Software Engineering. I work at Orbe Telecom as a Systems Analyst, where I transform challenges into creative solutions. \n\nMy expertise covers stacks such as PHP, Laravel and Flutter, shaping my path in software development. \n\nIn off-code moments, reading and gaming are my passion. After all, life takes on a special touch when we balance work, leisure and a good dose of code.",
+    "aboutMeDescription": "Hey guys! I'm Adryanne (also known in the community as Ackalantys), a full-stack software developer with a degree in Systems Analysis and Development and currently a postgraduate student in Software Engineering. I work as a Systems Analyst, where I apply, learn and develop my skills. \n\nMy expertise covers stacks such as PHP, Laravel and Flutter, moulding my path in software development. \n\nIn off-code moments, reading and gaming are my passion.",
         "@aboutMeDescription":{
-            "description": "Hi guys! I'm Adryanne, a full-stack software developer with a degree in Systems Analysis and Development from Faculdade Lourenço Filho and currently a postgraduate student in Software Engineering. I work at Orbe Telecom as a Systems Analyst, where I transform challenges into creative solutions. \n\nMy expertise covers stacks such as PHP, Laravel and Flutter, shaping my path in software development. \n\nIn off-code moments, reading and gaming are my passion. After all, life takes on a special touch when we balance work, leisure and a good dose of code."
+            "description": "Hey guys! I'm Adryanne (also known in the community as Ackalantys), a full-stack software developer with a degree in Systems Analysis and Development and currently a postgraduate student in Software Engineering. I work as a Systems Analyst, where I apply, learn and develop my skills. \n\nMy expertise covers stacks such as PHP, Laravel and Flutter, moulding my path in software development. \n\nIn off-code moments, reading and gaming are my passion."
         },
     "projects": "Projects",
         "@projects": {
             "description": "Projects"
         },
-    "projectsTitle": "Take a look at my highlighted projects",
+    "projectsTitle": "Take a look at some of my projects",
         "@projectsTitle": {
-            "description": "Take a look at my highlighted projects"
+            "description": "Take a look at some of my projects"
         },
-    "projectTitle1": "Project Title 1",
+    "projectTitle1": "Dev Links - Project",
         "@projectTitle1": {
             "description": "Project Title 1"
         },
@@ -67,9 +67,9 @@
         "@projectTitle3": {
             "description": "Project Title 3"
         },
-    "descriptionProject1": "Project description 1",
+    "descriptionProject1": "Personal project to create a personalised links page ",
         "@descriptionProject1": {
-            "description": "Project description 1"
+            "description": "Personal project to create a personalised links page "
         },
     "descriptionProject2": "Project description 2",
         "@descriptionProject2": {
@@ -87,13 +87,13 @@
         "@contact": {
             "description": "Contact"
         },
-    "contactTitle": "Enjoyed my work? Let’s work together",
+    "contactTitle": "Enjoyed my work? Send me a message",
         "@contactTitle": {
-            "description": "Enjoyed my work? Let’s work together"
+            "description": "Enjoyed my work? Send me a message"
         },
-    "contactDescription": "Contact me if you want to be my friend and we can make network together",
+    "contactDescription": "Contact me by sending me a message or via my social networks",
         "@contactDescription": {
-            "description": "Contact me if you want to be my friend and we can make network together"
+            "description": "Contact me by sending me a message or via my social networks"
         },
     "contactHintName": "Name",
         "@contactHintName":{
