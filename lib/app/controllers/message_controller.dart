@@ -6,9 +6,10 @@ import 'package:ackalantys/app/shared/urls/url_utils.dart';
 class MessageController {
   IHttpClient httpClient = HttpClient();
   Future<void> sendMessage({required String message, required String email, required String name}) async {
-    final response = await httpClient.post(
-        url: UrlUtils.botUrl,
-        body: jsonEncode({
+    await httpClient.post(
+      url: UrlUtils.botUrl,
+      body: jsonEncode(
+        {
           "embeds": [
             {
               "description": message,
@@ -19,6 +20,8 @@ class MessageController {
               ]
             }
           ]
-        }));
+        },
+      ),
+    );
   }
 }
