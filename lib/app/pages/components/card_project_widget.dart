@@ -26,7 +26,7 @@ class CardProjectWidget extends StatelessWidget {
     final theme = Theme.of(context);
     final colors = theme.extension<ColorExtension>()!;
     return InkWell(
-      onTap: () => print('CardProjectWidget'),
+      onTap: () => onTap,
       child: SizedBox(
         height: 400,
         child: Card(
