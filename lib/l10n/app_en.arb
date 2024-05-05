@@ -63,9 +63,9 @@
         "@projectTitle2": {
             "description": "Institutional website - Orbe Telecom"
         },
-    "projectTitle3": "Project Title 3",
+    "projectTitle3": "Flutter Shop",
         "@projectTitle3": {
-            "description": "Project Title 3"
+            "description": "Flutter Shop"
         },
     "descriptionProject1": "Personal project to create a personalised links page ",
         "@descriptionProject1": {
@@ -75,9 +75,9 @@
         "@descriptionProject2": {
             "description": "Orbe Telecom's corporate website"
         },
-    "descriptionProject3": "Project description 3",
+    "descriptionProject3": "A simple api consumption project with simple state management using ChangeNotifier",
         "@descriptionProject3": {
-            "description": "Project description 3"
+            "description": "A simple api consumption project with simple state management using ChangeNotifier"
         },
     "seeAll": "See all",
         "@seeAll": {

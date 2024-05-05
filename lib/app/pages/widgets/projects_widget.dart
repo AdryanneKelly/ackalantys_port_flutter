@@ -39,7 +39,7 @@ class ProjectsWidget extends StatelessWidget {
               children: [
                 CardProjectWidget(
                   date: '2024',
-                  imageProject: 'assets/images/image_project.png',
+                  imageProject: 'assets/images/project-2.png',
                   title: localization.projectTitle1,
                   description: localization.descriptionProject1,
                   stack: 'assets/icons/tailwind.png',
@@ -47,7 +47,7 @@ class ProjectsWidget extends StatelessWidget {
                 SizedBox(width: size.width * 0.02),
                 CardProjectWidget(
                   date: '2023',
-                  imageProject: 'assets/images/image_project.png',
+                  imageProject: 'assets/images/project-1.png',
                   title: localization.projectTitle2,
                   description: localization.descriptionProject2,
                   stack: 'assets/icons/tailwind.png',
@@ -55,7 +55,7 @@ class ProjectsWidget extends StatelessWidget {
                 SizedBox(width: size.width * 0.02),
                 CardProjectWidget(
                   date: '',
-                  imageProject: 'assets/images/image_project.png',
+                  imageProject: 'assets/images/project-3.png',
                   title: localization.projectTitle3,
                   description: localization.descriptionProject3,
                   stack: 'assets/icons/tailwind.png',

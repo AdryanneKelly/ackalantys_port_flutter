@@ -40,7 +40,7 @@ class ProjectsMobileWidget extends StatelessWidget {
               children: [
                 CardProjectMobileWidget(
                   date: '',
-                  imageProject: 'assets/images/image_project.png',
+                  imageProject: 'assets/images/project-1.png',
                   title: localization.projectTitle1,
                   description: localization.descriptionProject1,
                   stack: 'assets/icons/tailwind.png',

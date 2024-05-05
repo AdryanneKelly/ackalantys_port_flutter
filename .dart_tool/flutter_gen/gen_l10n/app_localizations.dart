@@ -193,10 +193,10 @@ abstract class AppLocalizations {
   /// **'Institutional website - Orbe Telecom'**
   String get projectTitle2;
 
-  /// Project Title 3
+  /// Flutter Shop
   ///
   /// In en, this message translates to:
-  /// **'Project Title 3'**
+  /// **'Flutter Shop'**
   String get projectTitle3;
 
   /// Personal project to create a personalised links page
@@ -211,10 +211,10 @@ abstract class AppLocalizations {
   /// **'Orbe Telecom\'s corporate website'**
   String get descriptionProject2;
 
-  /// Project description 3
+  /// A simple api consumption project with simple state management using ChangeNotifier
   ///
   /// In en, this message translates to:
-  /// **'Project description 3'**
+  /// **'A simple api consumption project with simple state management using ChangeNotifier'**
   String get descriptionProject3;
 
   /// See all

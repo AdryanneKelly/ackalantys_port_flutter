@@ -53,7 +53,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get projectTitle2 => 'Institutional website - Orbe Telecom';
 
   @override
-  String get projectTitle3 => 'Project Title 3';
+  String get projectTitle3 => 'Flutter Shop';
 
   @override
   String get descriptionProject1 => 'Personal project to create a personalised links page ';
@@ -62,7 +62,7 @@ class AppLocalizationsEn extends AppLocalizations {
   String get descriptionProject2 => 'Orbe Telecom\'s corporate website';
 
   @override
-  String get descriptionProject3 => 'Project description 3';
+  String get descriptionProject3 => 'A simple api consumption project with simple state management using ChangeNotifier';
 
   @override
   String get seeAll => 'See all';
