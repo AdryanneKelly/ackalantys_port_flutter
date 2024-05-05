@@ -53,7 +53,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get projectTitle2 => 'Site institucional - Orbe Telecom';
 
   @override
-  String get projectTitle3 => 'Titulo do projeto 3';
+  String get projectTitle3 => 'Flutter Shop';
 
   @override
   String get descriptionProject1 => 'Projeto pessoal de criação personalizada de página de links';
@@ -62,7 +62,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get descriptionProject2 => 'Site institucional da empresa Orbe Telecom';
 
   @override
-  String get descriptionProject3 => 'Descrição do projeto 3';
+  String get descriptionProject3 => 'Projeto simples com consumo de API e gerência de estado com ChangeNotifier';
 
   @override
   String get seeAll => 'Ver tudo';
@@ -74,7 +74,7 @@ class AppLocalizationsPt extends AppLocalizations {
   String get contactTitle => 'Gostou do meu trabalho? Mande-me uma mensagem';
 
   @override
-  String get contactDescription => 'Cntre em contato comigo enviando uma mensagem ou pelas minhas redes sociais';
+  String get contactDescription => 'Entre em contato comigo enviando uma mensagem ou pelas minhas redes sociais';
 
   @override
   String get contactHintName => 'Seu nome';

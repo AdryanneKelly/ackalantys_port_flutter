@@ -181,7 +181,7 @@ abstract class AppLocalizations {
   /// **'Take a look at some of my projects'**
   String get projectsTitle;
 
-  /// Project Title 1
+  /// Dev Links - Project
   ///
   /// In en, this message translates to:
   /// **'Dev Links - Project'**

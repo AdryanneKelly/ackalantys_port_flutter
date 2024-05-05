@@ -1,6 +1,4 @@
-2024/05/05-18:56:07.872 5e08 Reusing MANIFEST /tmp/flutter_tools.GSJORE/flutter_tools_chrome_device.MAZNSJ/Default/shared_proto_db/MANIFEST-000001
-2024/05/05-18:56:07.872 5e08 Recovering log #3
-2024/05/05-18:56:07.873 5e08 Reusing old log /tmp/flutter_tools.GSJORE/flutter_tools_chrome_device.MAZNSJ/Default/shared_proto_db/000003.log 
-2024/05/05-18:56:22.283 5e09 Level-0 table #5: started
-2024/05/05-18:56:22.288 5e09 Level-0 table #5: 126060 bytes OK
-2024/05/05-18:56:22.291 5e09 Delete type=0 #3
+2024/05/05-19:39:30.085 9e6d Reusing MANIFEST /tmp/flutter_tools.JEVFMO/flutter_tools_chrome_device.THNPTE/Default/shared_proto_db/MANIFEST-000001
+2024/05/05-19:39:30.085 9e6d Recovering log #4
+2024/05/05-19:39:30.086 9e6d Reusing old log /tmp/flutter_tools.JEVFMO/flutter_tools_chrome_device.THNPTE/Default/shared_proto_db/000004.log 
+2024/05/05-19:39:30.086 9e6d Delete type=0 #3
