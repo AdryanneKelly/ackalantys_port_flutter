@@ -25,10 +25,10 @@ class CardProjectWidget extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     final theme = Theme.of(context);
     final colors = theme.extension<ColorExtension>()!;
-    return InkWell(
-      onTap: () => onTap,
-      child: SizedBox(
-        height: 400,
+    return SizedBox(
+      height: 405,
+      child: InkWell(
+        onTap: onTap,
         child: Card(
           child: Column(
             children: [
