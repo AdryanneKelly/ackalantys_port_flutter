@@ -96,4 +96,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get contactSendMessage => 'Send message';
+
+  @override
+  String get contactSentMessage => 'Message sent!';
 }

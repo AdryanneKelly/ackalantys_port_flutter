@@ -96,4 +96,7 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get contactSendMessage => 'Enviar mensagem';
+
+  @override
+  String get contactSentMessage => 'Mensagem enviada!';
 }

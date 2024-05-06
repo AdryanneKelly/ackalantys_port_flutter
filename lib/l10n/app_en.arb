@@ -122,5 +122,9 @@
     "contactSendMessage": "Send message",
         "@contactSendMessage": {
             "description": "Send message"
+        },
+    "contactSentMessage": "Message sent!",
+        "@contactSentMessage": {
+            "description": "Message sent!"
         }
 }

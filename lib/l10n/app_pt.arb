@@ -29,5 +29,6 @@
     "contactEmailValidation": "Por favor, escreva seu email",
     "contactHintMessage": "Mensagem",
     "contactMessageValidation": "Por favor, escreva uma mensagem",
-    "contactSendMessage": "Enviar mensagem"
+    "contactSendMessage": "Enviar mensagem",
+    "contactSentMessage": "Mensagem enviada!"
 }

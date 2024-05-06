@@ -282,6 +282,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Send message'**
   String get contactSendMessage;
+
+  /// Message sent!
+  ///
+  /// In en, this message translates to:
+  /// **'Message sent!'**
+  String get contactSentMessage;
 }
 
 class _AppLocalizationsDelegate extends LocalizationsDelegate<AppLocalizations> {

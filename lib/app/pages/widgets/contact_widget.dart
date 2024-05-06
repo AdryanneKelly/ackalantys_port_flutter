@@ -155,7 +155,13 @@ class ContactWidget extends StatelessWidget {
                               email: emailController.text,
                               message: messageController.text,
                             );
-
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                backgroundColor: Colors.green,
+                                content: Text(localization.contactSentMessage),
+                                behavior: SnackBarBehavior.floating,
+                              ),
+                            );
                             nameController.clear();
                             emailController.clear();
                             messageController.clear();
