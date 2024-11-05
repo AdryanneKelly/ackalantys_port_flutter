@@ -59,7 +59,7 @@ class ProjectsWidget extends StatelessWidget {
                 SizedBox(width: size.width * 0.02),
                 CardProjectWidget(
                   date: '2024',
-                  imageProject: 'assets/images/project-3.png',
+                  imageProject: 'assets/images/project-3-new.png',
                   title: localization.projectTitle3,
                   description: localization.descriptionProject3,
                   stack: 'assets/icons/flutter.png',

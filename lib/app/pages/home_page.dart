@@ -1,8 +1,10 @@
 import 'package:ackalantys/app/pages/widgets/about_widget.dart';
+import 'package:ackalantys/app/pages/widgets/articles_widget.dart';
 import 'package:ackalantys/app/pages/widgets/contact_widget.dart';
 import 'package:ackalantys/app/pages/widgets/footer_widget.dart';
 import 'package:ackalantys/app/pages/widgets/home_widget.dart';
 import 'package:ackalantys/app/pages/widgets/mobile_widgets/about_mobile_widget.dart';
+import 'package:ackalantys/app/pages/widgets/mobile_widgets/articles_mobile_widget.dart';
 import 'package:ackalantys/app/pages/widgets/mobile_widgets/contact_mobile_widget.dart';
 import 'package:ackalantys/app/pages/widgets/mobile_widgets/footer_mobile_widget.dart';
 import 'package:ackalantys/app/pages/widgets/mobile_widgets/home_mobile_widget.dart';
@@ -24,6 +26,7 @@ class _HomePageState extends State<HomePage> {
   final homeKey = GlobalKey();
   final aboutKey = GlobalKey();
   final projectsKey = GlobalKey();
+  final articlesKey = GlobalKey();
   final contactKey = GlobalKey();
 
   void _onMenuClick(int value) {
@@ -50,6 +53,13 @@ class _HomePageState extends State<HomePage> {
         );
         break;
       case 4:
+        Scrollable.ensureVisible(
+          articlesKey.currentContext!,
+          duration: const Duration(milliseconds: 500),
+          curve: Curves.easeInOut,
+        );
+        break;
+      case 5:
         Scrollable.ensureVisible(
           contactKey.currentContext!,
           duration: const Duration(milliseconds: 500),
@@ -106,6 +116,7 @@ class _HomePageState extends State<HomePage> {
                   HomeMobileWidget(key: homeKey),
                   AboutMobileWidget(key: aboutKey),
                   ProjectsMobileWidget(key: projectsKey),
+                  ArticlesMobileWidget(key: articlesKey),
                   ContactMobileWidget(key: contactKey),
                   const FooterMobileWidget()
                 ],
@@ -116,6 +127,16 @@ class _HomePageState extends State<HomePage> {
                 HomeWidget(key: homeKey),
                 AboutWidget(key: aboutKey),
                 ProjectsWidget(key: projectsKey),
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: size.width * 0.1),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Image.asset('assets/images/image03.png'),
+                    ],
+                  ),
+                ),
+                ArticlesWidget(key: articlesKey),
                 ContactWidget(key: contactKey),
                 const FooterWidget()
               ],

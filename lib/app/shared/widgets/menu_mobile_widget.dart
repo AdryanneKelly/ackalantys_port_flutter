@@ -107,10 +107,18 @@ class MenuMobileWidget extends StatelessWidget {
               },
             ),
             ListTile(
+              leading: Icon(Icons.article, color: colors.drawerMenuIconColor),
+              title: Text(localization.menuArticle, style: theme.textTheme.labelLarge),
+              onTap: () {
+                onMenuClick(4);
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
               leading: Icon(Icons.mail, color: colors.drawerMenuIconColor),
               title: Text(localization.menuContact, style: theme.textTheme.labelLarge),
               onTap: () {
-                onMenuClick(4);
+                onMenuClick(5);
                 Navigator.pop(context);
               },
             ),

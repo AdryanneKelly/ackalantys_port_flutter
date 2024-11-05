@@ -8,6 +8,8 @@ import 'package:intl/intl.dart' as intl;
 import 'app_localizations_en.dart';
 import 'app_localizations_pt.dart';
 
+// ignore_for_file: type=lint
+
 /// Callers can lookup localized strings with an instance of AppLocalizations
 /// returned by `AppLocalizations.of(context)`.
 ///
@@ -105,10 +107,10 @@ abstract class AppLocalizations {
   /// **'Software Developer'**
   String get occupation;
 
-  /// Hey, guys! This is Adryanne Kelly, a full-stack software developer passionate about challenges and discovering new solutions
+  /// Hey, guys! This is Adryanne Kelly, a software engineer passionate about challenges and discovering new solutions
   ///
   /// In en, this message translates to:
-  /// **'Hey, guys! This is Adryanne Kelly, a full-stack software developer passionate about challenges and discovering new solutions'**
+  /// **'Hey, guys! This is Adryanne Kelly, a software engineer passionate about challenges and discovering new solutions'**
   String get introduction;
 
   /// Home
@@ -128,6 +130,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Projects'**
   String get menuProject;
+
+  /// Articles
+  ///
+  /// In en, this message translates to:
+  /// **'Articles'**
+  String get menuArticle;
 
   /// Contact
   ///
@@ -159,14 +167,12 @@ abstract class AppLocalizations {
   /// **'A bit of me...'**
   String get aboutMeTitle;
 
-  /// Hey guys! I'm Adryanne (also known in the community as Ackalantys), a full-stack software developer with a degree in Systems Analysis and Development and currently a postgraduate student in Software Engineering. I work as a Systems Analyst, where I apply, learn and develop my skills.
+  /// Hey, everyone! I'm Adryanne, a software engineer with expertise in mobile development using Flutter and web applications with PHP and Laravel. I recently completed a postgraduate program in Software Engineering and actively participate in communities like Flutterando, where I’m also a moderator, and He4rt Devs, where people know me as Ackalantys.
   ///
-  /// My expertise covers stacks such as PHP, Laravel and Flutter, moulding my path in software development.
-  ///
-  /// In off-code moments, reading and gaming are my passion.
+  /// Beyond coding, I enjoy sharing knowledge through articles and videos to support the developer ecosystem. In my downtime, I love a good book and playing games!
   ///
   /// In en, this message translates to:
-  /// **'Hey guys! I\'m Adryanne (also known in the community as Ackalantys), a full-stack software developer with a degree in Systems Analysis and Development and currently a postgraduate student in Software Engineering. I work as a Systems Analyst, where I apply, learn and develop my skills. \n\nMy expertise covers stacks such as PHP, Laravel and Flutter, moulding my path in software development. \n\nIn off-code moments, reading and gaming are my passion.'**
+  /// **'Hey, everyone! I\'m Adryanne, a software engineer with expertise in mobile development using Flutter and web applications with PHP and Laravel. I recently completed a postgraduate program in Software Engineering and actively participate in communities like Flutterando, where I’m also a moderator, and He4rt Devs, where people know me as Ackalantys. \n\nBeyond coding, I enjoy sharing knowledge through articles and videos to support the developer ecosystem. In my downtime, I love a good book and playing games!'**
   String get aboutMeDescription;
 
   /// Projects
@@ -193,10 +199,10 @@ abstract class AppLocalizations {
   /// **'Institutional website - Orbe Telecom'**
   String get projectTitle2;
 
-  /// Flutter Shop
+  /// Orbe Cliente
   ///
   /// In en, this message translates to:
-  /// **'Flutter Shop'**
+  /// **'Orbe Cliente'**
   String get projectTitle3;
 
   /// Personal project to create a personalised links page
@@ -211,10 +217,10 @@ abstract class AppLocalizations {
   /// **'Orbe Telecom\'s corporate website'**
   String get descriptionProject2;
 
-  /// A simple api consumption project with simple state management using ChangeNotifier
+  /// Application for customers with many integrated facilities
   ///
   /// In en, this message translates to:
-  /// **'A simple api consumption project with simple state management using ChangeNotifier'**
+  /// **'Application for customers with many integrated facilities'**
   String get descriptionProject3;
 
   /// See all
@@ -222,6 +228,54 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'See all'**
   String get seeAll;
+
+  /// Articles
+  ///
+  /// In en, this message translates to:
+  /// **'Articles'**
+  String get articles;
+
+  /// Take a look at some of my articles!
+  ///
+  /// In en, this message translates to:
+  /// **'Take a look at some of my articles!'**
+  String get articlesTitle;
+
+  /// No description provided for @articleTitle1.
+  ///
+  /// In en, this message translates to:
+  /// **'How to make a multi-language application with Flutter - PT-BR'**
+  String get articleTitle1;
+
+  /// No description provided for @articleTitle2.
+  ///
+  /// In en, this message translates to:
+  /// **'Understanding State Pattern — Flutter PT-BR'**
+  String get articleTitle2;
+
+  /// No description provided for @articleTitle3.
+  ///
+  /// In en, this message translates to:
+  /// **'Autofilling fields in FilamentPHP using API - PT-BR'**
+  String get articleTitle3;
+
+  /// No description provided for @descriptionArticle1.
+  ///
+  /// In en, this message translates to:
+  /// **'Neste artigo, vou guiá-lo passo a passo sobre como implementar um seletor de idioma moderno e...'**
+  String get descriptionArticle1;
+
+  /// No description provided for @descriptionArticle2.
+  ///
+  /// In en, this message translates to:
+  /// **'No universo Flutter encontramos diversas formas de lidar com gerência de estado e...'**
+  String get descriptionArticle2;
+
+  /// No description provided for @descriptionArticle3.
+  ///
+  /// In en, this message translates to:
+  /// **'Neste artigo, vou mostrar como você pode consumir API e utilizá-la para autopreenchimento de campos...'**
+  String get descriptionArticle3;
 
   /// Contact
   ///
